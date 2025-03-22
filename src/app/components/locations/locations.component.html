@@ -1,0 +1,80 @@
+<div class="locations-container">
+  <h1 class="locations-header">{{ "LOCATIONS.TITLE" | translate }}</h1>
+  <div class="locations-accordion">
+    <div
+      *ngFor="let location of locations; let i = index"
+      class="location-accordion-item"
+      [class.expanded]="expandedIndex === i"
+    >
+      <div
+        class="location-header"
+        (click)="isBrowser && toggleAccordion($event)"
+      >
+        <div class="location-title">
+          <h2>{{ location.city }}</h2>
+          <p>{{ location.country }}</p>
+        </div>
+        <a
+          [href]="getPhoneNumber(location.phone)"
+          class="location-phone"
+          (click)="$event.stopPropagation()"
+        >
+          <i class="material-icons">phone</i>
+          {{ location.phone }}
+        </a>
+      </div>
+
+      <div class="location-content" [class.expanded]="expandedIndex === i">
+        <div class="location-details">
+          <p>
+            <i class="material-icons">location_on</i> {{ location.address }}
+          </p>
+          <p><i class="material-icons">email</i> {{ location.email }}</p>
+        </div>
+
+        <div class="location-services">
+          <div *ngFor="let service of location.services" class="service-item">
+            <p class="service-day">
+              <i class="material-icons">event</i>
+              {{ "LOCATIONS.DAYS." + service.day | translate }}
+            </p>
+            <p class="service-time">
+              <i class="material-icons">schedule</i>
+              {{ service.time }}
+            </p>
+            <p class="service-type">
+              <i class="material-icons">church</i>
+              {{ "LOCATIONS.SERVICES." + service.type | translate }}
+            </p>
+            <p class="service-language">
+              <i class="material-icons">translate</i>
+              {{ service.language }}
+            </p>
+          </div>
+
+          <div
+            *ngIf="location.musicRehearsal"
+            class="service-item music-rehearsal"
+          >
+            <p class="service-day">
+              <i class="material-icons">music_note</i>
+              {{ "LOCATIONS.DAYS." + location.musicRehearsal.day | translate }}
+            </p>
+            <p class="service-time">
+              <i class="material-icons">schedule</i>
+              {{ location.musicRehearsal.time }}
+            </p>
+            <p class="service-type">
+              <i class="material-icons">music_note</i>
+              {{ "LOCATIONS.SERVICES.MUSIC_REHEARSAL" | translate }}
+            </p>
+            <p class="service-language">
+              <i class="material-icons">translate</i>
+              {{ location.musicRehearsal.language }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

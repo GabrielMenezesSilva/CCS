@@ -1,0 +1,63 @@
+<div class="home-container">
+  <section class="welcome-section">
+    <h2>{{ "HOME.WELCOME_SECTION.TITLE" | translate }}</h2>
+    <p>{{ "HOME.WELCOME_SECTION.DESCRIPTION" | translate }}</p>
+    <div class="features-grid">
+      <div class="feature-card" (click)="navigateToLocations()">
+        <i class="material-icons">church</i>
+        <h4>{{ "HOME.WELCOME_SECTION.FEATURES.WORSHIP" | translate }}</h4>
+      </div>
+      <div class="feature-card">
+        <i class="material-icons">groups</i>
+        <h4>{{ "HOME.WELCOME_SECTION.FEATURES.COMMUNITY" | translate }}</h4>
+      </div>
+      <div class="feature-card">
+        <i class="material-icons">youth</i>
+        <h4>{{ "HOME.WELCOME_SECTION.FEATURES.YOUTH" | translate }}</h4>
+      </div>
+      <div class="feature-card">
+        <i class="material-icons">music_note</i>
+        <h4>{{ "HOME.WELCOME_SECTION.FEATURES.MUSIC" | translate }}</h4>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <h3>
+      <i class="material-icons">newspaper</i>
+      {{ "HOME.NEWS_SECTION.TITLE" | translate }}
+    </h3>
+    <p>{{ "HOME.NEWS_SECTION.NO_NEWS" | translate }}</p>
+  </section>
+
+  <section class="events-section">
+    <h3>
+      <i class="material-icons">event</i>
+      {{ "HOME.EVENTS_SECTION.TITLE" | translate }}
+    </h3>
+    <p>{{ "HOME.EVENTS_SECTION.NO_EVENTS" | translate }}</p>
+  </section>
+
+  <section class="info-section">
+    <h3>{{ "HOME.INFO_SECTION.TITLE" | translate }}</h3>
+    <div class="info-grid">
+      <div class="info-card">
+        <i class="material-icons">schedule</i>
+        <h4>{{ "HOME.INFO_SECTION.WORSHIP_TIMES.TITLE" | translate }}</h4>
+        <p>{{ "HOME.INFO_SECTION.WORSHIP_TIMES.SUNDAY" | translate }}</p>
+        <p>{{ "HOME.INFO_SECTION.WORSHIP_TIMES.WEDNESDAY" | translate }}</p>
+      </div>
+      <div class="info-card">
+        <i class="material-icons">location_on</i>
+        <h4>{{ "HOME.INFO_SECTION.LOCATION.TITLE" | translate }}</h4>
+        <p>{{ "HOME.INFO_SECTION.LOCATION.ADDRESS" | translate }}</p>
+      </div>
+      <div class="info-card">
+        <i class="material-icons">contact_mail</i>
+        <h4>{{ "HOME.INFO_SECTION.CONTACT.TITLE" | translate }}</h4>
+        <p>{{ "HOME.INFO_SECTION.CONTACT.EMAIL" | translate }}</p>
+        <p>{{ "HOME.INFO_SECTION.CONTACT.PHONE" | translate }}</p>
+      </div>
+    </div>
+  </section>
+</div>

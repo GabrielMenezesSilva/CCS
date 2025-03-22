@@ -1,0 +1,146 @@
+{
+  "HEADER": {
+    "HOME": "Accueil",
+    "ABOUT": "À Propos",
+    "LOCATIONS": "Lieux",
+    "CONTACT": "Contact",
+    "TITLE": "Congrégation Chrétienne"
+  },
+  "NAV": {
+    "HOME": "Accueil",
+    "INSTITUTIONAL": "Institutionnel",
+    "LOCATIONS": "Adresses des Maisons de Prière"
+  },
+  "LOCATIONS": {
+    "TITLE": "Adresses des Maisons de Prière et Horaires des Cultes",
+    "SERVICES": {
+      "WORSHIP": "Culte",
+      "YOUTH": "Réunion des Jeunes",
+      "MUSIC_REHEARSAL": "Répétition de Musique"
+    },
+    "DAYS": {
+      "WEDNESDAY": "Mercredi",
+      "THURSDAY": "Jeudi",
+      "SATURDAY": "Samedi",
+      "SUNDAY": "Dimanche",
+      "FIRST_SATURDAY": "Premier Samedi",
+      "SECOND_SUNDAY": "Deuxième Dimanche",
+      "THIRD_SUNDAY": "Troisième Dimanche",
+      "FOURTH_SUNDAY": "Quatrième Dimanche",
+      "LAST_SUNDAY": "Dernier Dimanche du Mois",
+      "FIRST_WEDNESDAY": "Premier Mercredi",
+      "SECOND_WEDNESDAY": "Deuxième Mercredi",
+      "THIRD_WEDNESDAY": "Troisième Mercredi",
+      "FOURTH_WEDNESDAY": "Quatrième Mercredi",
+      "LAST_WEDNESDAY": "Dernier Mercredi du Mois"
+    }
+  },
+  "HOME": {
+    "TITLE": "Bienvenue à la Congrégation Chrétienne en Suisse",
+    "SUBTITLE": "Une Communauté de Foi et d'Amour",
+    "DESCRIPTION": "La Congrégation Chrétienne en Suisse est une communauté religieuse dédiée au service de Dieu et du prochain. Notre mission est de partager l'amour du Christ et de créer un environnement accueillant pour tous.",
+    "FEATURES": {
+      "WORSHIP": "Horaires et Adresses",
+      "COMMUNITY": "Communauté Accueillante",
+      "YOUTH": "Programmes pour les Jeunes",
+      "MUSIC": "Ministère de la Musique"
+    },
+    "WELCOME_SECTION": {
+      "TITLE": "Bienvenue dans Notre Communauté",
+      "DESCRIPTION": "La Congrégation Chrétienne en Suisse est une communauté religieuse dédiée au service de Dieu et du prochain. Notre mission est de partager l'amour du Christ et de créer un environnement accueillant pour tous.",
+      "FEATURES": {
+        "WORSHIP": "Horaires et Adresses",
+        "COMMUNITY": "Communauté Accueillante",
+        "YOUTH": "Programmes pour les Jeunes",
+        "MUSIC": "Ministère de la Musique"
+      }
+    },
+    "NEWS_SECTION": {
+      "TITLE": "Actualités Récentes",
+      "NO_NEWS": "Aucune actualité disponible pour le moment."
+    },
+    "EVENTS_SECTION": {
+      "TITLE": "Événements à Venir",
+      "NO_EVENTS": "Aucun événement prévu pour le moment."
+    },
+    "INFO_SECTION": {
+      "TITLE": "Informations Importantes",
+      "WORSHIP_TIMES": {
+        "TITLE": "Horaires des Cultes",
+        "SUNDAY": "Dimanche : 10:00",
+        "WEDNESDAY": "Mercredi : 19:30"
+      },
+      "LOCATION": {
+        "TITLE": "Emplacement",
+        "ADDRESS": "Route du Mandement, 197\n1242 Satigny (GE)\nSuisse"
+      },
+      "CONTACT": {
+        "TITLE": "Contact",
+        "EMAIL": "Email : administration@congregationchretienne.ch",
+        "PHONE": "Tél/Fax : 0041 22.754.16.79"
+      }
+    }
+  },
+  "INSTITUTIONAL": {
+    "TITLE": "Page Institutionnelle",
+    "SECTIONS": {
+      "HISTORY": {
+        "TITLE": "Notre Histoire",
+        "DESCRIPTION": "La Congrégation Chrétienne en Suisse a une riche histoire de service et de dévouement à la communauté. Fondée en [année], notre communauté a grandi et évolué au fil des années, tout en maintenant toujours les valeurs fondamentales de la foi chrétienne."
+      },
+      "MISSION": {
+        "TITLE": "Notre Mission",
+        "DESCRIPTION": "Notre mission est de partager l'amour du Christ et de créer un environnement accueillant pour tous. Nous nous efforçons de servir Dieu et le prochain à travers nos cultes, nos programmes pour les jeunes et nos activités communautaires."
+      },
+      "VALUES": {
+        "TITLE": "Nos Valeurs",
+        "DESCRIPTION": "Nos valeurs fondamentales sont :",
+        "ITEMS": {
+          "FAITH": "Foi en Dieu et en Sa Parole",
+          "LOVE": "Amour pour le prochain et la communauté",
+          "SERVICE": "Service dévoué à Dieu et à la société",
+          "COMMUNITY": "Renforcement de la communauté chrétienne"
+        }
+      },
+      "LEADERSHIP": {
+        "TITLE": "Notre Leadership",
+        "DESCRIPTION": "Notre communauté est dirigée par des leaders dévoués qui travaillent pour préserver les valeurs et les principes de la Congrégation Chrétienne."
+      },
+      "CONTACT": {
+        "TITLE": "Contact",
+        "DESCRIPTION": "Pour plus d'informations sur notre institution, n'hésitez pas à nous contacter via les canaux disponibles."
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "À Propos",
+    "HISTORY": {
+      "TITLE": "Notre Histoire",
+      "DESCRIPTION": "La Congrégation Chrétienne en Suisse a une riche histoire de service et de dévouement à la communauté."
+    },
+    "MISSION": {
+      "TITLE": "Notre Mission",
+      "DESCRIPTION": "Notre mission est de partager l'amour du Christ et de créer un environnement accueillant pour tous."
+    },
+    "VALUES": {
+      "TITLE": "Nos Valeurs",
+      "FAITH": "Foi",
+      "LOVE": "Amour",
+      "SERVICE": "Service",
+      "COMMUNITY": "Communauté"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "Contactez-nous pour plus d'informations ou pour participer à nos cultes.",
+    "ADDRESS": "Adresse",
+    "PHONE": "Téléphone",
+    "EMAIL": "Email",
+    "FORM": {
+      "NAME": "Nom",
+      "EMAIL": "Email",
+      "MESSAGE": "Message",
+      "SEND": "Envoyer"
+    }
+  }
+} 

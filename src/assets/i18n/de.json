@@ -1,0 +1,146 @@
+{
+  "HEADER": {
+    "HOME": "Startseite",
+    "ABOUT": "Über Uns",
+    "LOCATIONS": "Standorte",
+    "CONTACT": "Kontakt",
+    "TITLE": "Christliche Gemeinde"
+  },
+  "NAV": {
+    "HOME": "Startseite",
+    "INSTITUTIONAL": "Institutionell",
+    "LOCATIONS": "Gebetshäuser Adressen"
+  },
+  "LOCATIONS": {
+    "TITLE": "Adressen der Gebetshäuser und Gottesdienstzeiten",
+    "SERVICES": {
+      "WORSHIP": "Gottesdienst",
+      "YOUTH": "Jugendtreffen",
+      "MUSIC_REHEARSAL": "Musikprobe"
+    },
+    "DAYS": {
+      "WEDNESDAY": "Mittwoch",
+      "THURSDAY": "Donnerstag",
+      "SATURDAY": "Samstag",
+      "SUNDAY": "Sonntag",
+      "FIRST_SATURDAY": "Erster Samstag",
+      "SECOND_SUNDAY": "Zweiter Sonntag",
+      "THIRD_SUNDAY": "Dritter Sonntag",
+      "FOURTH_SUNDAY": "Vierter Sonntag",
+      "LAST_SUNDAY": "Letzter Sonntag des Monats",
+      "FIRST_WEDNESDAY": "Erster Mittwoch",
+      "SECOND_WEDNESDAY": "Zweiter Mittwoch",
+      "THIRD_WEDNESDAY": "Dritter Mittwoch",
+      "FOURTH_WEDNESDAY": "Vierter Mittwoch",
+      "LAST_WEDNESDAY": "Letzter Mittwoch des Monats"
+    }
+  },
+  "HOME": {
+    "TITLE": "Willkommen bei der Christlichen Gemeinde in der Schweiz",
+    "SUBTITLE": "Eine Gemeinschaft des Glaubens und der Liebe",
+    "DESCRIPTION": "Die Christliche Gemeinde in der Schweiz ist eine religiöse Gemeinschaft, die sich dem Dienst an Gott und dem Nächsten widmet. Unsere Mission ist es, die Liebe Christi zu teilen und eine einladende Umgebung für alle zu schaffen.",
+    "FEATURES": {
+      "WORSHIP": "Zeiten und Adressen",
+      "COMMUNITY": "Gastfreundliche Gemeinschaft",
+      "YOUTH": "Jugendprogramme",
+      "MUSIC": "Musikministerium"
+    },
+    "WELCOME_SECTION": {
+      "TITLE": "Willkommen in unserer Gemeinschaft",
+      "DESCRIPTION": "Die Christliche Gemeinde in der Schweiz ist eine religiöse Gemeinschaft, die sich dem Dienst an Gott und dem Nächsten widmet. Unsere Mission ist es, die Liebe Christi zu teilen und eine einladende Umgebung für alle zu schaffen.",
+      "FEATURES": {
+        "WORSHIP": "Zeiten und Adressen",
+        "COMMUNITY": "Gastfreundliche Gemeinschaft",
+        "YOUTH": "Jugendprogramme",
+        "MUSIC": "Musikministerium"
+      }
+    },
+    "NEWS_SECTION": {
+      "TITLE": "Aktuelle Nachrichten",
+      "NO_NEWS": "Derzeit sind keine Nachrichten verfügbar."
+    },
+    "EVENTS_SECTION": {
+      "TITLE": "Kommende Veranstaltungen",
+      "NO_EVENTS": "Derzeit sind keine Veranstaltungen geplant."
+    },
+    "INFO_SECTION": {
+      "TITLE": "Wichtige Informationen",
+      "WORSHIP_TIMES": {
+        "TITLE": "Gottesdienstzeiten",
+        "SUNDAY": "Sonntags: 10:00 Uhr",
+        "WEDNESDAY": "Mittwochs: 19:30 Uhr"
+      },
+      "LOCATION": {
+        "TITLE": "Standort",
+        "ADDRESS": "Route du Mandement, 197\n1242 Satigny (GE)\nSchweiz"
+      },
+      "CONTACT": {
+        "TITLE": "Kontakt",
+        "EMAIL": "E-Mail: administration@congregationchretienne.ch",
+        "PHONE": "Tel/Fax: 0041 22.754.16.79"
+      }
+    }
+  },
+  "INSTITUTIONAL": {
+    "TITLE": "Institutionelle Seite",
+    "SECTIONS": {
+      "HISTORY": {
+        "TITLE": "Unsere Geschichte",
+        "DESCRIPTION": "Die Christliche Gemeinde in der Schweiz hat eine reiche Geschichte des Dienstes und der Hingabe an die Gemeinschaft. Gegründet im Jahr [Jahr], ist unsere Gemeinschaft im Laufe der Jahre gewachsen und hat sich entwickelt, während sie stets die grundlegenden Werte des christlichen Glaubens beibehalten hat."
+      },
+      "MISSION": {
+        "TITLE": "Unsere Mission",
+        "DESCRIPTION": "Unsere Mission ist es, die Liebe Christi zu teilen und eine einladende Umgebung für alle zu schaffen. Wir streben danach, Gott und dem Nächsten durch unsere Gottesdienste, Jugendprogramme und Gemeinschaftsaktivitäten zu dienen."
+      },
+      "VALUES": {
+        "TITLE": "Unsere Werte",
+        "DESCRIPTION": "Unsere grundlegenden Werte sind:",
+        "ITEMS": {
+          "FAITH": "Glaube an Gott und Sein Wort",
+          "LOVE": "Liebe zum Nächsten und zur Gemeinschaft",
+          "SERVICE": "Hingebungsvoller Dienst an Gott und der Gesellschaft",
+          "COMMUNITY": "Stärkung der christlichen Gemeinschaft"
+        }
+      },
+      "LEADERSHIP": {
+        "TITLE": "Unsere Leitung",
+        "DESCRIPTION": "Unsere Gemeinschaft wird von engagierten Leitern geführt, die daran arbeiten, die Werte und Prinzipien der Christlichen Gemeinde zu bewahren."
+      },
+      "CONTACT": {
+        "TITLE": "Kontakt",
+        "DESCRIPTION": "Für weitere Informationen über unsere Institution kontaktieren Sie uns bitte über die verfügbaren Kanäle."
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "Über Uns",
+    "HISTORY": {
+      "TITLE": "Unsere Geschichte",
+      "DESCRIPTION": "Die Christliche Gemeinde in der Schweiz hat eine reiche Geschichte des Dienstes und der Hingabe an die Gemeinschaft."
+    },
+    "MISSION": {
+      "TITLE": "Unsere Mission",
+      "DESCRIPTION": "Unsere Mission ist es, die Liebe Christi zu teilen und eine einladende Umgebung für alle zu schaffen."
+    },
+    "VALUES": {
+      "TITLE": "Unsere Werte",
+      "FAITH": "Glaube",
+      "LOVE": "Liebe",
+      "SERVICE": "Dienst",
+      "COMMUNITY": "Gemeinschaft"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "DESCRIPTION": "Kontaktieren Sie uns für weitere Informationen oder um an unseren Gottesdiensten teilzunehmen.",
+    "ADDRESS": "Adresse",
+    "PHONE": "Telefon",
+    "EMAIL": "E-Mail",
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "E-Mail",
+      "MESSAGE": "Nachricht",
+      "SEND": "Senden"
+    }
+  }
+} 

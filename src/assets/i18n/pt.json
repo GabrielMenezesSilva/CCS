@@ -1,0 +1,146 @@
+{
+  "HEADER": {
+    "HOME": "Início",
+    "ABOUT": "Sobre",
+    "LOCATIONS": "Locais",
+    "CONTACT": "Contato",
+    "TITLE": "Congregação Cristã"
+  },
+  "NAV": {
+    "HOME": "Início",
+    "INSTITUTIONAL": "Institucional",
+    "LOCATIONS": "Endereços das Casas de Oração"
+  },
+  "LOCATIONS": {
+    "TITLE": "Endereços das Casas de Oração e Horários dos Cultos",
+    "SERVICES": {
+      "WORSHIP": "Culto",
+      "YOUTH": "Reunião dos Jovens",
+      "MUSIC_REHEARSAL": "Ensaio de Música"
+    },
+    "DAYS": {
+      "WEDNESDAY": "Quarta-feira",
+      "THURSDAY": "Quinta-feira",
+      "SATURDAY": "Sábado",
+      "SUNDAY": "Domingo",
+      "FIRST_SATURDAY": "Primeiro Sábado",
+      "SECOND_SUNDAY": "Segundo Domingo",
+      "THIRD_SUNDAY": "Terceiro Domingo",
+      "FOURTH_SUNDAY": "Quarto Domingo",
+      "LAST_SUNDAY": "Último Domingo do Mês",
+      "FIRST_WEDNESDAY": "Primeira Quarta-feira",
+      "SECOND_WEDNESDAY": "Segunda Quarta-feira",
+      "THIRD_WEDNESDAY": "Terceira Quarta-feira",
+      "FOURTH_WEDNESDAY": "Quarta Quarta-feira",
+      "LAST_WEDNESDAY": "Última Quarta-feira do Mês"
+    }
+  },
+  "HOME": {
+    "TITLE": "Bem-vindo à Congregação Cristã na Suíça",
+    "SUBTITLE": "Uma Comunidade de Fé e Amor",
+    "DESCRIPTION": "A Congregação Cristã na Suíça é uma comunidade religiosa dedicada ao serviço de Deus e ao próximo. Nossa missão é compartilhar o amor de Cristo e criar um ambiente acolhedor para todos.",
+    "FEATURES": {
+      "WORSHIP": "Horários e Endereços",
+      "COMMUNITY": "Comunidade Acolhedora",
+      "YOUTH": "Programas para Jovens",
+      "MUSIC": "Ministério de Música"
+    },
+    "WELCOME_SECTION": {
+      "TITLE": "Bem-vindo à Nossa Comunidade",
+      "DESCRIPTION": "A Congregação Cristã na Suíça é uma comunidade religiosa dedicada ao serviço de Deus e ao próximo. Nossa missão é compartilhar o amor de Cristo e criar um ambiente acolhedor para todos.",
+      "FEATURES": {
+        "WORSHIP": "Horários e Endereços",
+        "COMMUNITY": "Comunidade Acolhedora",
+        "YOUTH": "Programas para Jovens",
+        "MUSIC": "Ministério de Música"
+      }
+    },
+    "NEWS_SECTION": {
+      "TITLE": "Notícias Recentes",
+      "NO_NEWS": "Nenhuma notícia disponível no momento."
+    },
+    "EVENTS_SECTION": {
+      "TITLE": "Próximos Eventos",
+      "NO_EVENTS": "Nenhum evento programado no momento."
+    },
+    "INFO_SECTION": {
+      "TITLE": "Informações Importantes",
+      "WORSHIP_TIMES": {
+        "TITLE": "Horários dos Cultos",
+        "SUNDAY": "Domingo: 10:00",
+        "WEDNESDAY": "Quarta-feira: 19:30"
+      },
+      "LOCATION": {
+        "TITLE": "Localização",
+        "ADDRESS": "Route du Mandement, 197\n1242 Satigny (GE)\nSuíça"
+      },
+      "CONTACT": {
+        "TITLE": "Contato",
+        "EMAIL": "Email: administration@congregationchretienne.ch",
+        "PHONE": "Tel/Fax: 0041 22.754.16.79"
+      }
+    }
+  },
+  "INSTITUTIONAL": {
+    "TITLE": "Página Institucional",
+    "SECTIONS": {
+      "HISTORY": {
+        "TITLE": "Nossa História",
+        "DESCRIPTION": "A Congregação Cristã na Suíça tem uma rica história de serviço e dedicação à comunidade. Fundada em [ano], nossa comunidade cresceu e evoluiu ao longo dos anos, mantendo sempre os valores fundamentais da fé cristã."
+      },
+      "MISSION": {
+        "TITLE": "Nossa Missão",
+        "DESCRIPTION": "Nossa missão é compartilhar o amor de Cristo e criar um ambiente acolhedor para todos. Nos esforçamos para servir a Deus e ao próximo através de nossos cultos, programas para jovens e atividades comunitárias."
+      },
+      "VALUES": {
+        "TITLE": "Nossos Valores",
+        "DESCRIPTION": "Nossos valores fundamentais são:",
+        "ITEMS": {
+          "FAITH": "Fé em Deus e em Sua Palavra",
+          "LOVE": "Amor ao próximo e à comunidade",
+          "SERVICE": "Serviço dedicado a Deus e à sociedade",
+          "COMMUNITY": "Fortalecimento da comunidade cristã"
+        }
+      },
+      "LEADERSHIP": {
+        "TITLE": "Nossa Liderança",
+        "DESCRIPTION": "Nossa comunidade é liderada por líderes dedicados que trabalham para preservar os valores e princípios da Congregação Cristã."
+      },
+      "CONTACT": {
+        "TITLE": "Contato",
+        "DESCRIPTION": "Para mais informações sobre nossa instituição, não hesite em nos contatar através dos canais disponíveis."
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "Sobre",
+    "HISTORY": {
+      "TITLE": "Nossa História",
+      "DESCRIPTION": "A Congregação Cristã na Suíça tem uma rica história de serviço e dedicação à comunidade."
+    },
+    "MISSION": {
+      "TITLE": "Nossa Missão",
+      "DESCRIPTION": "Nossa missão é compartilhar o amor de Cristo e criar um ambiente acolhedor para todos."
+    },
+    "VALUES": {
+      "TITLE": "Nossos Valores",
+      "FAITH": "Fé",
+      "LOVE": "Amor",
+      "SERVICE": "Serviço",
+      "COMMUNITY": "Comunidade"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contato",
+    "DESCRIPTION": "Entre em contato conosco para mais informações ou para participar de nossos cultos.",
+    "ADDRESS": "Endereço",
+    "PHONE": "Telefone",
+    "EMAIL": "Email",
+    "FORM": {
+      "NAME": "Nome",
+      "EMAIL": "Email",
+      "MESSAGE": "Mensagem",
+      "SEND": "Enviar"
+    }
+  }
+} 
