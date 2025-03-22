@@ -82,34 +82,30 @@
     }
   },
   "INSTITUTIONAL": {
-    "TITLE": "Página Institucional",
+    "TITLE": "Institucional",
+    "SUBTITLE": "Congregação Cristã na Suíça",
     "SECTIONS": {
+      "PREFACE": {
+        "TITLE": "Prefácio",
+        "CONTENT": "A Congregação Cristã na Suíça, em conformidade com sua política de publicação de informações, fornece detalhes sobre sua estrutura institucional, fundamentada na doutrina apostólica e na prática religiosa."
+      },
       "HISTORY": {
-        "TITLE": "Nossa História",
-        "DESCRIPTION": "A Congregação Cristã na Suíça tem uma rica história de serviço e dedicação à comunidade. Fundada em [ano], nossa comunidade cresceu e evoluiu ao longo dos anos, mantendo sempre os valores fundamentais da fé cristã."
+        "TITLE": "História",
+        "CONTENT": "A Congregação Cristã teve suas origens em um pequeno grupo de evangélicos italianos em Chicago, Illinois, EUA, em 1904. À medida que o número de membros crescia, tornou-se necessário estabelecer uma entidade legal para adquirir e gerenciar propriedades para suas reuniões."
       },
-      "MISSION": {
-        "TITLE": "Nossa Missão",
-        "DESCRIPTION": "Nossa missão é compartilhar o amor de Cristo e criar um ambiente acolhedor para todos. Nos esforçamos para servir a Deus e ao próximo através de nossos cultos, programas para jovens e atividades comunitárias."
-      },
-      "VALUES": {
-        "TITLE": "Nossos Valores",
-        "DESCRIPTION": "Nossos valores fundamentais são:",
-        "ITEMS": {
-          "FAITH": "Fé em Deus e em Sua Palavra",
-          "LOVE": "Amor ao próximo e à comunidade",
-          "SERVICE": "Serviço dedicado a Deus e à sociedade",
-          "COMMUNITY": "Fortalecimento da comunidade cristã"
-        }
-      },
-      "LEADERSHIP": {
-        "TITLE": "Nossa Liderança",
-        "DESCRIPTION": "Nossa comunidade é liderada por líderes dedicados que trabalham para preservar os valores e princípios da Congregação Cristã."
-      },
-      "CONTACT": {
-        "TITLE": "Contato",
-        "DESCRIPTION": "Para mais informações sobre nossa instituição, não hesite em nos contatar através dos canais disponíveis."
+      "CLARIFICATION": {
+        "TITLE": "Esclarecimento",
+        "CONTENT": "A Congregação Cristã na Suíça não solicita contribuições financeiras de seus membros. Todas as contribuições são voluntárias e anônimas. A Congregação Cristã na Suíça não está envolvida em atividades políticas, e seus membros não participam de manifestações ou movimentos políticos."
       }
+    },
+    "CONTACT": {
+      "TITLE": "Contato",
+      "ADDRESS_TITLE": "Endereço",
+      "ADDRESS": "Centro Administrativo - Route du Mandement, 197\n1242 Satigny (GE) - Suíça",
+      "EMAIL_TITLE": "E-mail",
+      "EMAIL": "administration@congregationchretienne.ch",
+      "PHONE_TITLE": "Telefone",
+      "PHONE": "Tel/Fax: 0041 22.754.16.79"
     }
   },
   "ABOUT": {

@@ -1,36 +1,87 @@
 <div class="about-container">
-  <div class="about-header">
-    <h1>{{ title }}</h1>
-    <p class="subtitle">Congrégation Chrétienne en Suisse</p>
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>{{ "INSTITUTIONAL.TITLE" | translate }}</h1>
+      <p class="subtitle">{{ "INSTITUTIONAL.SUBTITLE" | translate }}</p>
+    </div>
   </div>
 
   <div class="about-content">
-    @for (section of sections; track section.title) {
     <section class="about-section">
-      <h2>{{ section.title }}</h2>
+      <div class="section-icon">
+        <i class="fas fa-book-open"></i>
+      </div>
+      <h2>{{ "INSTITUTIONAL.SECTIONS.PREFACE.TITLE" | translate }}</h2>
       <div class="section-content">
-        <p [innerHTML]="section.content | nlToBr"></p>
+        <p
+          [innerHTML]="
+            'INSTITUTIONAL.SECTIONS.PREFACE.CONTENT' | translate | nlToBr
+          "
+        ></p>
       </div>
     </section>
-    }
+
+    <section class="about-section">
+      <div class="section-icon">
+        <i class="fas fa-history"></i>
+      </div>
+      <h2>{{ "INSTITUTIONAL.SECTIONS.HISTORY.TITLE" | translate }}</h2>
+      <div class="section-content">
+        <p
+          [innerHTML]="
+            'INSTITUTIONAL.SECTIONS.HISTORY.CONTENT' | translate | nlToBr
+          "
+        ></p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="section-icon">
+        <i class="fas fa-info-circle"></i>
+      </div>
+      <h2>{{ "INSTITUTIONAL.SECTIONS.CLARIFICATION.TITLE" | translate }}</h2>
+      <div class="section-content">
+        <p
+          [innerHTML]="
+            'INSTITUTIONAL.SECTIONS.CLARIFICATION.CONTENT' | translate | nlToBr
+          "
+        ></p>
+      </div>
+    </section>
   </div>
 
   <div class="about-footer">
     <div class="contact-info">
-      <h3>Informações de Contato</h3>
+      <h3>{{ "INSTITUTIONAL.CONTACT.TITLE" | translate }}</h3>
       <div class="contact-details">
         <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <p>Siège Administratif - Route du Mandement, 197</p>
-          <p>1242 Satigny (GE) - Suisse</p>
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            <h4>{{ "INSTITUTIONAL.CONTACT.ADDRESS_TITLE" | translate }}</h4>
+            <p
+              [innerHTML]="'INSTITUTIONAL.CONTACT.ADDRESS' | translate | nlToBr"
+            ></p>
+          </div>
         </div>
         <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <p>Email: administration&#64;congregationchretienne.ch</p>
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <h4>{{ "INSTITUTIONAL.CONTACT.EMAIL_TITLE" | translate }}</h4>
+            <p>{{ "INSTITUTIONAL.CONTACT.EMAIL" | translate }}</p>
+          </div>
         </div>
         <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <p>Tél / Fax: 0041 22.754.16.79</p>
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-text">
+            <h4>{{ "INSTITUTIONAL.CONTACT.PHONE_TITLE" | translate }}</h4>
+            <p>{{ "INSTITUTIONAL.CONTACT.PHONE" | translate }}</p>
+          </div>
         </div>
       </div>
     </div>
