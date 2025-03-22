@@ -11,12 +11,10 @@
       <div class="section-icon">
         <i class="fas fa-book-open"></i>
       </div>
-      <h2>{{ "INSTITUTIONAL.SECTIONS.PREFACE.TITLE" | translate }}</h2>
+      <h2>{{ "INSTITUTIONAL.PREFACE.TITLE" | translate }}</h2>
       <div class="section-content">
         <p
-          [innerHTML]="
-            'INSTITUTIONAL.SECTIONS.PREFACE.CONTENT' | translate | nlToBr
-          "
+          [innerHTML]="'INSTITUTIONAL.PREFACE.CONTENT' | translate | nlToBr"
         ></p>
       </div>
     </section>
@@ -25,12 +23,10 @@
       <div class="section-icon">
         <i class="fas fa-history"></i>
       </div>
-      <h2>{{ "INSTITUTIONAL.SECTIONS.HISTORY.TITLE" | translate }}</h2>
+      <h2>{{ "INSTITUTIONAL.HISTORY.TITLE" | translate }}</h2>
       <div class="section-content">
         <p
-          [innerHTML]="
-            'INSTITUTIONAL.SECTIONS.HISTORY.CONTENT' | translate | nlToBr
-          "
+          [innerHTML]="'INSTITUTIONAL.HISTORY.CONTENT' | translate | nlToBr"
         ></p>
       </div>
     </section>
@@ -39,11 +35,11 @@
       <div class="section-icon">
         <i class="fas fa-info-circle"></i>
       </div>
-      <h2>{{ "INSTITUTIONAL.SECTIONS.CLARIFICATION.TITLE" | translate }}</h2>
+      <h2>{{ "INSTITUTIONAL.CLARIFICATION.TITLE" | translate }}</h2>
       <div class="section-content">
         <p
           [innerHTML]="
-            'INSTITUTIONAL.SECTIONS.CLARIFICATION.CONTENT' | translate | nlToBr
+            'INSTITUTIONAL.CLARIFICATION.CONTENT' | translate | nlToBr
           "
         ></p>
       </div>
@@ -59,9 +55,11 @@
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="contact-text">
-            <h4>{{ "INSTITUTIONAL.CONTACT.ADDRESS_TITLE" | translate }}</h4>
+            <h4>{{ "INSTITUTIONAL.CONTACT.ADDRESS.TITLE" | translate }}</h4>
             <p
-              [innerHTML]="'INSTITUTIONAL.CONTACT.ADDRESS' | translate | nlToBr"
+              [innerHTML]="
+                'INSTITUTIONAL.CONTACT.ADDRESS.CONTENT' | translate | nlToBr
+              "
             ></p>
           </div>
         </div>
@@ -70,8 +68,8 @@
             <i class="fas fa-envelope"></i>
           </div>
           <div class="contact-text">
-            <h4>{{ "INSTITUTIONAL.CONTACT.EMAIL_TITLE" | translate }}</h4>
-            <p>{{ "INSTITUTIONAL.CONTACT.EMAIL" | translate }}</p>
+            <h4>{{ "INSTITUTIONAL.CONTACT.EMAIL.TITLE" | translate }}</h4>
+            <p>{{ "INSTITUTIONAL.CONTACT.EMAIL.CONTENT" | translate }}</p>
           </div>
         </div>
         <div class="contact-item">
@@ -79,8 +77,8 @@
             <i class="fas fa-phone"></i>
           </div>
           <div class="contact-text">
-            <h4>{{ "INSTITUTIONAL.CONTACT.PHONE_TITLE" | translate }}</h4>
-            <p>{{ "INSTITUTIONAL.CONTACT.PHONE" | translate }}</p>
+            <h4>{{ "INSTITUTIONAL.CONTACT.PHONE.TITLE" | translate }}</h4>
+            <p>{{ "INSTITUTIONAL.CONTACT.PHONE.CONTENT" | translate }}</p>
           </div>
         </div>
       </div>

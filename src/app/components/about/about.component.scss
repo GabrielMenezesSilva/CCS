@@ -178,6 +178,8 @@
               color: #495057;
               margin: 0;
               line-height: 1.6;
+              word-break: break-all;
+              font-size: 0.95rem;
             }
           }
         }
@@ -264,6 +266,12 @@
 
             .contact-icon {
               margin-bottom: 1rem;
+            }
+
+            .contact-text {
+              p {
+                font-size: 0.9rem;
+              }
             }
           }
         }

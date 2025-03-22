@@ -20,12 +20,6 @@ export class AboutComponent implements OnInit, OnDestroy {
   constructor(private translate: TranslateService) {}
 
   ngOnInit() {
-    // Define o idioma padrão se não estiver definido
-    if (!this.translate.currentLang) {
-      this.translate.setDefaultLang('pt');
-      this.translate.use('pt');
-    }
-
     // Força a atualização das traduções quando o componente é inicializado
     this.translate.reloadLang(this.translate.currentLang);
 

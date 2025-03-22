@@ -84,25 +84,32 @@
   "INSTITUTIONAL": {
     "TITLE": "Istituzionale",
     "SUBTITLE": "Congregazione Cristiana in Svizzera",
-    "SECTIONS": {
-      "PREFACE": {
-        "TITLE": "Prefazione",
-        "CONTENT": "LA CONGREGAZIONE CRISTIANA IN SVIZZERA non permette la pubblicazione di informazioni o dati su Internet al di sopra di se stessa. Coloro che accedono a un \"altro sito\" che non è considerato un sito \"ufficiale\". Fornisci informazioni, agisci a tuo rischio e pericolo. La comunità cristiana si esprime solo attraverso il suo Comitato Esecutivo (Team di Amministrazione) o il Consiglio degli Anziani.\n\nLA CONGREGAZIONE CRISTIANA è una comunità religiosa interamente fondata sulla dottrina e sulla Fede apostoliche contenute nel Nuovo Testamento della Sacra Bibbia."
-      },
-      "HISTORY": {
-        "TITLE": "Storia",
-        "CONTENT": "LA CONGREGAZIONE CRISTIANA ha origine da un piccolo gruppo di evangelici italiani che, nella città di Chicago negli Stati Uniti d'America, nel 1904, iniziò a riunirsi nelle proprie case, cercando la guida Divina per seguire gli insegnamenti biblici cristiani, nella semplicità della Fede apostolica.\n\nA questo gruppo, privo di qualsiasi denominazione e senza alcuna propaganda o forma speciale di comunicazione, si unirono molte altre persone, sentendosi mosse da Dio. Allo stesso modo, si formarono in vari paesi gruppi impregnati degli stessi sentimenti e della stessa comprensione della Parola di Dio.\n\nCon l'aumento del numero di persone che professavano gli stessi principi di adorazione di Dio e non avendo luoghi particolari dove riunirsi, fu necessario acquisire luoghi a questo scopo, e da lì sorse la necessità di creare un'istituzione con personalità giuridica per poter legalizzare le riunioni e titolare la proprietà di questi immobili, e per questo motivo questa entità fu denominata \"CONGREGAZIONE CRISTIANA\", cioè semplice riunione di persone, senza alcun formalismo o personalismo, solo impregnate degli stessi valori spirituali cristiani di adorazione di Dio."
-      },
-      "CLARIFICATION": {
-        "TITLE": "Chiarimento",
-        "CONTENT": "Le entrate provenienti dai suoi membri devono derivare da offerte volontarie e anonime, i cui valori devono essere applicati integralmente alle finalità per le quali sono state offerte, essendo vietato qualsiasi carattere obbligatorio della loro prestazione o vincolo con l'integrazione o la permanenza dei membri.\n\nL'esercente di qualsiasi incarico spirituale o amministrativo dovrà mantenersi attraverso il proprio lavoro o mezzi propri, essendo vietata qualsiasi specie di remunerazione o retribuzione per l'esercizio di queste attività o per la ministrazione di servizi spirituali o sacramenti.\n\nLA CONGREGAZIONE CRISTIANA non ha alcun vincolo con partiti o ideologie politiche e gli integranti degli incarichi spirituali o amministrativi devono astenersi dall'accettare incarichi o cariche politiche, essendo incompatibile l'esercizio concomitante di funzioni in entrambe le sfere (incarico o carica politica e funzione spirituale o amministrativa nella chiesa). Si raccomanda ai membri di adempiere ai doveri civici di cittadini, secondo le leggi del paese.\n\nÈ inoltre vietato ai membri, integranti del Ministero e dell'Amministrazione utilizzare il nome della CONGREGAZIONE CRISTIANA per fini politici, elettorali o ideologici.\n\nLA CONGREGAZIONE CRISTIANA non mantiene polemiche sui suoi punti di dottrina o sul suo modo di organizzazione, né autorizza chiunque a farlo in suo nome.\n\nGli integranti del Ministero (Anziani, Diaconi e Collaboratori) e dell'Amministrazione della CONGREGAZIONE CRISTIANA non mantengono \"siti\" o qualsiasi altro tipo di comunicazione finalizzata a rispondere a questioni spirituali o anche a chiarire punti di dottrina o principi di Fede.\n\nLA CONGREGAZIONE CRISTIANA non fa alcun tipo di propaganda della sua dottrina, né utilizza alcun mezzo di divulgazione pubblica dei suoi principi di fede. Chi ha interesse spirituale a conoscere la sua dottrina dovrà frequentare i suoi culti in una qualsiasi delle sue chiese.\n\nLA CONGREGAZIONE CRISTIANA IN SVIZZERA è della stessa fede e dottrina delle altre congregazioni in altri paesi, come la Congregazione Cristiana in Brasile, la Congregazione Cristiana in Spagna, la Congregazione Cristiana in Germania, la Congregazione Cristiana nel Regno Unito, la Congregazione Cristiana negli Stati Uniti, la Congregazione Cristiana in Francia, la Congregazione Cristiana in Italia, la Congregazione Cristiana in Portogallo e altre parti del mondo dove è rappresentata."
-      }
+    "PREFACE": {
+      "TITLE": "Prefazione",
+      "CONTENT": "LA CONGREGAZIONE CRISTIANA IN SVIZZERA non permette la pubblicazione di informazioni o dati su Internet al di sopra di se stessa. Coloro che accedono a un \"altro sito\" che non è considerato un sito \"ufficiale\". Fornisci informazioni, agisci a tuo rischio e pericolo. La comunità cristiana si esprime solo attraverso il suo Comitato Esecutivo (Team di Amministrazione) o il Consiglio degli Anziani.\n\nLA CONGREGAZIONE CRISTIANA è una comunità religiosa interamente fondata sulla dottrina e sulla Fede apostoliche contenute nel Nuovo Testamento della Sacra Bibbia."
+    },
+    "HISTORY": {
+      "TITLE": "Storia",
+      "CONTENT": "LA CONGREGAZIONE CRISTIANA ha origine da un piccolo gruppo di evangelici italiani che, nella città di Chicago negli Stati Uniti d'America, nel 1904, iniziò a riunirsi nelle proprie case, cercando la guida Divina per seguire gli insegnamenti biblici cristiani, nella semplicità della Fede apostolica.\n\nA questo gruppo, privo di qualsiasi denominazione e senza alcuna propaganda o forma speciale di comunicazione, si unirono molte altre persone, sentendosi mosse da Dio. Allo stesso modo, si formarono in vari paesi gruppi impregnati degli stessi sentimenti e della stessa comprensione della Parola di Dio.\n\nCon l'aumento del numero di persone che professavano gli stessi principi di adorazione di Dio e non avendo luoghi particolari dove riunirsi, fu necessario acquisire luoghi a questo scopo, e da lì sorse la necessità di creare un'istituzione con personalità giuridica per poter legalizzare le riunioni e titolare la proprietà di questi immobili, e per questo motivo questa entità fu denominata \"CONGREGAZIONE CRISTIANA\", cioè semplice riunione di persone, senza alcun formalismo o personalismo, solo impregnate degli stessi valori spirituali cristiani di adorazione di Dio."
+    },
+    "CLARIFICATION": {
+      "TITLE": "Chiarimento",
+      "CONTENT": "Le entrate provenienti dai suoi membri devono derivare da offerte volontarie e anonime, i cui valori devono essere applicati integralmente alle finalità per le quali sono state offerte, essendo vietato qualsiasi carattere obbligatorio della loro prestazione o vincolo con l'integrazione o la permanenza dei membri.\n\nL'esercente di qualsiasi incarico spirituale o amministrativo dovrà mantenersi attraverso il proprio lavoro o mezzi propri, essendo vietata qualsiasi specie di remunerazione o retribuzione per l'esercizio di queste attività o per la ministrazione di servizi spirituali o sacramenti.\n\nLA CONGREGAZIONE CRISTIANA non ha alcun vincolo con partiti o ideologie politiche e gli integranti degli incarichi spirituali o amministrativi devono astenersi dall'accettare incarichi o cariche politiche, essendo incompatibile l'esercizio concomitante di funzioni in entrambe le sfere (incarico o carica politica e funzione spirituale o amministrativa nella chiesa). Si raccomanda ai membri di adempiere ai doveri civici di cittadini, secondo le leggi del paese.\n\nÈ inoltre vietato ai membri, integranti del Ministero e dell'Amministrazione utilizzare il nome della CONGREGAZIONE CRISTIANA per fini politici, elettorali o ideologici.\n\nLA CONGREGAZIONE CRISTIANA non mantiene polemiche sui suoi punti di dottrina o sul suo modo di organizzazione, né autorizza chiunque a farlo in suo nome.\n\nGli integranti del Ministero (Anziani, Diaconi e Collaboratori) e dell'Amministrazione della CONGREGAZIONE CRISTIANA non mantengono \"siti\" o qualsiasi altro tipo di comunicazione finalizzata a rispondere a questioni spirituali o anche a chiarire punti di dottrina o principi di Fede.\n\nLA CONGREGAZIONE CRISTIANA non fa alcun tipo di propaganda della sua dottrina, né utilizza alcun mezzo di divulgazione pubblica dei suoi principi di fede. Chi ha interesse spirituale a conoscere la sua dottrina dovrà frequentare i suoi culti in una qualsiasi delle sue chiese.\n\nLA CONGREGAZIONE CRISTIANA IN SVIZZERA è della stessa fede e dottrina delle altre congregazioni in altri paesi, come la Congregazione Cristiana in Brasile, la Congregazione Cristiana in Spagna, la Congregazione Cristiana in Germania, la Congregazione Cristiana nel Regno Unito, la Congregazione Cristiana negli Stati Uniti, la Congregazione Cristiana in Francia, la Congregazione Cristiana in Italia, la Congregazione Cristiana in Portogallo e altre parti del mondo dove è rappresentata."
     },
     "CONTACT": {
-      "TITLE": "Informazioni di Contatto",
-      "ADDRESS": "Sede amministrativa - Route du Mandement, 197\n1242 Satigny (GE) - Svizzera",
-      "EMAIL": "Email: administration@congregationchretienne.ch",
-      "PHONE": "Tel/Fax: 0041 22.754.16.79"
+      "TITLE": "Contatti",
+      "ADDRESS": {
+        "TITLE": "Indirizzo",
+        "CONTENT": "Sede amministrativa - Route du Mandement, 197\n1242 Satigny (GE) - Svizzera"
+      },
+      "EMAIL": {
+        "TITLE": "E-mail",
+        "CONTENT": "administration@congregationchretienne.ch"
+      },
+      "PHONE": {
+        "TITLE": "Telefono",
+        "CONTENT": "Tel/Fax: 0041 22.754.16.79"
+      }
     }
   },
   "ABOUT": {

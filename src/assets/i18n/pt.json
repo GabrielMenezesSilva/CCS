@@ -84,28 +84,32 @@
   "INSTITUTIONAL": {
     "TITLE": "Institucional",
     "SUBTITLE": "Congregação Cristã na Suíça",
-    "SECTIONS": {
-      "PREFACE": {
-        "TITLE": "Prefácio",
-        "CONTENT": "A Congregação Cristã na Suíça, em conformidade com sua política de publicação de informações, fornece detalhes sobre sua estrutura institucional, fundamentada na doutrina apostólica e na prática religiosa."
-      },
-      "HISTORY": {
-        "TITLE": "História",
-        "CONTENT": "A Congregação Cristã teve suas origens em um pequeno grupo de evangélicos italianos em Chicago, Illinois, EUA, em 1904. À medida que o número de membros crescia, tornou-se necessário estabelecer uma entidade legal para adquirir e gerenciar propriedades para suas reuniões."
-      },
-      "CLARIFICATION": {
-        "TITLE": "Esclarecimento",
-        "CONTENT": "A Congregação Cristã na Suíça não solicita contribuições financeiras de seus membros. Todas as contribuições são voluntárias e anônimas. A Congregação Cristã na Suíça não está envolvida em atividades políticas, e seus membros não participam de manifestações ou movimentos políticos."
-      }
+    "PREFACE": {
+      "TITLE": "Prefácio",
+      "CONTENT": "A CONGREGAÇÃO CRISTÃ NA SUÍÇA não permite a publicação de informações ou dados na Internet acima de si mesma. Aqueles que acessam \"outro site\" que não é considerado um \"site\" oficial. Forneça informações, aja em seu próprio interesse e por sua conta e risco. A comunidade cristã só se expressa por meio de seu Comitê Executivo (Equipe de Administração) ou do Conselho de Anciãos.\n\nA CONGREGAÇÃO CRISTÃ é uma comunidade religiosa inteiramente fundamentada na doutrina e Fé apostólicas contidas no Novo Testamento da Bíblia Sagrada."
+    },
+    "HISTORY": {
+      "TITLE": "História",
+      "CONTENT": "A CONGREGAÇÃO CRISTÃ tem origem num pequeno grupo de evangélicos italianos que, na cidade de Chicago nos Estados Unidos da América, no ano de 1904, passou a se reunir em suas casas, buscando a guia Divina para seguir os ensinamentos bíblicos cristãos, dentro da simplicidade da Fé apostólica.\n\nA esse grupo, desprovido de qualquer denominação e sem qualquer propaganda ou forma especial de comunicação, foram se agregando muitas outras pessoas, sentindo-se movidas por Deus. Dessa mesma maneira, se formaram em diversos países grupos imbuídos dos mesmos sentimentos e compreensão da Palavra de Deus.\n\nCom o aumento do número de pessoas professando os mesmos princípios de adoração a Deus e não havendo locais particulares em que fosse possível reunir-se foi necessário adquirir-se locais para esse fim, havendo, a partir de então, a necessidade de se criar instituição com personalidade jurídica para poder legalizar as reuniões e titularizar a propriedade desses imóveis e, por isso, se denominou essa entidade de \"CONGREGAÇÃO CRISTÃ\", isto é, simples reunião de pessoas, sem qualquer formalismo ou personalismo, apenas imbuídas dos mesmos valores espirituais cristãos de adoração a Deus."
+    },
+    "CLARIFICATION": {
+      "TITLE": "Esclarecimentos",
+      "CONTENT": "As receitas advindas de seus membros devem decorrer de ofertas voluntárias e anônimas, cujos valores devem ser aplicados integralmente nas finalidades para as quais foram oferecidas, sendo vedado qualquer caráter de obrigatoriedade de sua prestação ou vínculo com a integração ou permanência de membros.\n\nO exercente de qualquer cargo espiritual ou de administração deverá manter-se através de seu trabalho ou meios próprios, uma vez que é vedada qualquer espécie de remuneração ou retribuição pelo exercício dessas atividades ou pela ministração de serviços espirituais ou sacramentos.\n\nA CONGREGAÇÃO CRISTÃ não tem qualquer vínculo com partidos ou ideologias políticas e os integrantes de cargos espirituais, ou de administração, devem se abster de aceitar cargos ou encargos políticos, sendo incompatível o exercício concomitante de funções em ambas as esferas (cargo ou encargo político e função espiritual ou administrativa na igreja). Recomenda-se aos membros cumprir os deveres cívicos de cidadãos, consoante as leis do país.\n\nTambém é vedado aos membros, integrantes do Ministério e da Administração utilizar-se do nome da CONGREGAÇÃO CRISTÃ para fins políticos, eleitorais ou ideológicos.\n\nA CONGREGAÇÃO CRISTÃ não mantém polêmicas sobre os seus pontos de doutrina ou seu modo de organização, nem autoriza ninguém a fazê-lo em seu nome.\n\nOs integrantes do Ministério (Anciães, Diáconos e Cooperadores) e da Administração da CONGREGAÇÃO CRISTÃ não mantém \"site\" ou qualquer outro tipo de comunicação objetivando atendimento de questões espirituais ou mesmo esclarecimentos de pontos de doutrina ou princípios de Fé.\n\nA CONGREGAÇÃO CRISTÃ não faz qualquer tipo de propaganda de sua doutrina, nem se utiliza de qualquer meio de divulgação pública de seus princípios de fé. Quem tiver interesse espiritual de conhecer sua doutrina deverá freqüentar seus cultos em qualquer de suas igrejas.\n\nA CONGREGAÇÃO CRISTÃ NA SUÍÇA é da mesma fé e doutrina que as outras congregações em outros países, como a Congregacao Cristã no Brasil, Congrecao Cristã na Espanha, Congrecao Cristã na Alemanha, Congrecao Cristã no Reino Unido, Congrecao Cristã nos Estados Unidos, Congrecao Cristã na França, Congrecao Cristã na Itália, Congrecao Cristã em Portugal e outras partes do mundo onde está representada."
     },
     "CONTACT": {
       "TITLE": "Contato",
-      "ADDRESS_TITLE": "Endereço",
-      "ADDRESS": "Centro Administrativo - Route du Mandement, 197\n1242 Satigny (GE) - Suíça",
-      "EMAIL_TITLE": "E-mail",
-      "EMAIL": "administration@congregationchretienne.ch",
-      "PHONE_TITLE": "Telefone",
-      "PHONE": "Tel/Fax: 0041 22.754.16.79"
+      "ADDRESS": {
+        "TITLE": "Endereço",
+        "CONTENT": "Centro Administrativo - Route du Mandement, 197\n1242 Satigny (GE) - Suíça"
+      },
+      "EMAIL": {
+        "TITLE": "E-mail",
+        "CONTENT": "administration@congregationchretienne.ch"
+      },
+      "PHONE": {
+        "TITLE": "Telefone",
+        "CONTENT": "Tel/Fax: 0041 22.754.16.79"
+      }
     }
   },
   "ABOUT": {
