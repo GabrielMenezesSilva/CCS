@@ -47,12 +47,11 @@
     },
     "WELCOME_SECTION": {
       "TITLE": "Willkommen in unserer Gemeinschaft",
-      "DESCRIPTION": "Die Christliche Gemeinde in der Schweiz ist eine religiöse Gemeinschaft, die sich dem Dienst an Gott und dem Nächsten widmet. Unsere Mission ist es, die Liebe Christi zu teilen und eine einladende Umgebung für alle zu schaffen.",
       "FEATURES": {
         "WORSHIP": "Zeiten und Adressen",
         "COMMUNITY": "Institutionell",
         "YOUTH": "Jugendprogramme",
-        "OFFERINGS": "Angebote"
+        "OFFERINGS": "Spenden"
       }
     },
     "NEWS_SECTION": {

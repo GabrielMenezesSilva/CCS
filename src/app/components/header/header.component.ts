@@ -32,6 +32,7 @@ export class HeaderComponent implements OnInit {
   ];
 
   currentLang: string = 'pt';
+  isMobileMenuOpen: boolean = false;
   private isBrowser: boolean;
 
   constructor(
@@ -63,6 +64,10 @@ export class HeaderComponent implements OnInit {
         }
       }
     }
+  }
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
 
   onLanguageChange(event: any) {

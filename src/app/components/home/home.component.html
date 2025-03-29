@@ -1,7 +1,18 @@
 <div class="home-container">
-  <section class="welcome-section">
-    <h2>{{ "HOME.WELCOME_SECTION.TITLE" | translate }}</h2>
-    <p>{{ "HOME.WELCOME_SECTION.DESCRIPTION" | translate }}</p>
+  <section class="hero-welcome-section">
+    <div class="hero-content">
+      <div class="welcome-text">
+        <h2>{{ "HOME.WELCOME_SECTION.TITLE" | translate }}</h2>
+      </div>
+      <div class="hero-image">
+        <img
+          class="hero-logo"
+          src="assets/images/logoCCS.png?v=1"
+          alt="Congregation Chretienne Logo"
+        />
+      </div>
+    </div>
+
     <div class="features-grid">
       <div class="feature-card" (click)="navigateToLocations()">
         <i class="material-icons">home</i>
