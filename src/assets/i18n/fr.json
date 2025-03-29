@@ -41,8 +41,8 @@
     "DESCRIPTION": "La Congrégation Chrétienne en Suisse est une communauté religieuse dédiée au service de Dieu et du prochain. Notre mission est de partager l'amour du Christ et de créer un environnement accueillant pour tous.",
     "FEATURES": {
       "WORSHIP": "Horaires et Adresses",
-      "COMMUNITY": "Communauté Accueillante",
-      "YOUTH": "Programmes pour les Jeunes",
+      "COMMUNITY": "Institutionnel",
+      "YOUTH": "Circulaires",
       "MUSIC": "Ministère de la Musique"
     },
     "WELCOME_SECTION": {
@@ -50,8 +50,8 @@
       "DESCRIPTION": "La Congrégation Chrétienne en Suisse est une communauté religieuse dédiée au service de Dieu et du prochain. Notre mission est de partager l'amour du Christ et de créer un environnement accueillant pour tous.",
       "FEATURES": {
         "WORSHIP": "Horaires et Adresses",
-        "COMMUNITY": "Communauté Accueillante",
-        "YOUTH": "Programmes pour les Jeunes",
+        "COMMUNITY": "Institutionnel",
+        "YOUTH": "Circulaires",
         "MUSIC": "Ministère de la Musique"
       }
     },

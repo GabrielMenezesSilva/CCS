@@ -41,8 +41,8 @@
     "DESCRIPTION": "La Congregazione Cristiana in Svizzera è una comunità religiosa dedicata al servizio di Dio e del prossimo. La nostra missione è condividere l'amore di Cristo e creare un ambiente accogliente per tutti.",
     "FEATURES": {
       "WORSHIP": "Orari e Indirizzi",
-      "COMMUNITY": "Comunità Accogliente",
-      "YOUTH": "Programmi per i Giovani",
+      "COMMUNITY": "Istituzionale",
+      "YOUTH": "Circolari",
       "MUSIC": "Ministero della Musica"
     },
     "WELCOME_SECTION": {
@@ -50,8 +50,8 @@
       "DESCRIPTION": "La Congregazione Cristiana in Svizzera è una comunità religiosa dedicata al servizio di Dio e del prossimo. La nostra missione è condividere l'amore di Cristo e creare un ambiente accogliente per tutti.",
       "FEATURES": {
         "WORSHIP": "Orari e Indirizzi",
-        "COMMUNITY": "Comunità Accogliente",
-        "YOUTH": "Programmi per i Giovani",
+        "COMMUNITY": "Istituzionale",
+        "YOUTH": "Circolari",
         "MUSIC": "Ministero della Musica"
       }
     },

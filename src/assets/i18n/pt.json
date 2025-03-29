@@ -41,8 +41,8 @@
     "DESCRIPTION": "A Congregação Cristã na Suíça é uma comunidade religiosa dedicada ao serviço de Deus e ao próximo. Nossa missão é compartilhar o amor de Cristo e criar um ambiente acolhedor para todos.",
     "FEATURES": {
       "WORSHIP": "Horários e Endereços",
-      "COMMUNITY": "Comunidade Acolhedora",
-      "YOUTH": "Programas para Jovens",
+      "COMMUNITY": "Institucional",
+      "YOUTH": "Circulares",
       "MUSIC": "Ministério de Música"
     },
     "WELCOME_SECTION": {
@@ -50,8 +50,8 @@
       "DESCRIPTION": "A Congregação Cristã na Suíça é uma comunidade religiosa dedicada ao serviço de Deus e ao próximo. Nossa missão é compartilhar o amor de Cristo e criar um ambiente acolhedor para todos.",
       "FEATURES": {
         "WORSHIP": "Horários e Endereços",
-        "COMMUNITY": "Comunidade Acolhedora",
-        "YOUTH": "Programas para Jovens",
+        "COMMUNITY": "Institucional",
+        "YOUTH": "Circulares",
         "MUSIC": "Ministério de Música"
       }
     },

@@ -2,7 +2,7 @@
   "HEADER": {
     "HOME": "Startseite",
     "ABOUT": "Über Uns",
-    "LOCATIONS": "Standorte",
+    "LOCATIONS": "Orte",
     "CONTACT": "Kontakt",
     "TITLE": "Christliche Gemeinde"
   },
@@ -41,7 +41,7 @@
     "DESCRIPTION": "Die Christliche Gemeinde in der Schweiz ist eine religiöse Gemeinschaft, die sich dem Dienst an Gott und dem Nächsten widmet. Unsere Mission ist es, die Liebe Christi zu teilen und eine einladende Umgebung für alle zu schaffen.",
     "FEATURES": {
       "WORSHIP": "Zeiten und Adressen",
-      "COMMUNITY": "Gastfreundliche Gemeinschaft",
+      "COMMUNITY": "Institutionell",
       "YOUTH": "Jugendprogramme",
       "MUSIC": "Musikministerium"
     },
@@ -50,7 +50,7 @@
       "DESCRIPTION": "Die Christliche Gemeinde in der Schweiz ist eine religiöse Gemeinschaft, die sich dem Dienst an Gott und dem Nächsten widmet. Unsere Mission ist es, die Liebe Christi zu teilen und eine einladende Umgebung für alle zu schaffen.",
       "FEATURES": {
         "WORSHIP": "Zeiten und Adressen",
-        "COMMUNITY": "Gastfreundliche Gemeinschaft",
+        "COMMUNITY": "Institutionell",
         "YOUTH": "Jugendprogramme",
         "MUSIC": "Musikministerium"
       }

@@ -16,4 +16,8 @@ export class HomeComponent {
   navigateToLocations() {
     this.router.navigate(['/endereco-casas-oracao']);
   }
+
+  navigateToInstitutional() {
+    this.router.navigate(['/institucional']);
+  }
 }

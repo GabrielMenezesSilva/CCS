@@ -4,15 +4,15 @@
     <p>{{ "HOME.WELCOME_SECTION.DESCRIPTION" | translate }}</p>
     <div class="features-grid">
       <div class="feature-card" (click)="navigateToLocations()">
-        <i class="material-icons">church</i>
+        <i class="material-icons">home</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.WORSHIP" | translate }}</h4>
       </div>
-      <div class="feature-card">
+      <div class="feature-card" (click)="navigateToInstitutional()">
         <i class="material-icons">groups</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.COMMUNITY" | translate }}</h4>
       </div>
       <div class="feature-card">
-        <i class="material-icons">youth</i>
+        <i class="material-icons">campaign</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.YOUTH" | translate }}</h4>
       </div>
       <div class="feature-card">
