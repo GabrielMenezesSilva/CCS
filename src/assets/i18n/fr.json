@@ -16,7 +16,8 @@
     "SERVICES": {
       "WORSHIP": "Culte",
       "YOUTH": "Réunion des Jeunes",
-      "MUSIC_REHEARSAL": "Répétition de Musique"
+      "MUSIC_REHEARSAL": "Répétition de Musique",
+      "OFFERINGS": "Offrandes"
     },
     "DAYS": {
       "WEDNESDAY": "Mercredi",
@@ -43,7 +44,7 @@
       "WORSHIP": "Horaires et Adresses",
       "COMMUNITY": "Institutionnel",
       "YOUTH": "Circulaires",
-      "MUSIC": "Ministère de la Musique"
+      "OFFERINGS": "Offrandes"
     },
     "WELCOME_SECTION": {
       "TITLE": "Bienvenue dans Notre Communauté",
@@ -52,7 +53,7 @@
         "WORSHIP": "Horaires et Adresses",
         "COMMUNITY": "Institutionnel",
         "YOUTH": "Circulaires",
-        "MUSIC": "Ministère de la Musique"
+        "OFFERINGS": "Offrandes"
       }
     },
     "NEWS_SECTION": {
