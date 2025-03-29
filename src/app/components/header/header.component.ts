@@ -33,6 +33,7 @@ export class HeaderComponent implements OnInit {
 
   currentLang: string = 'pt';
   isMobileMenuOpen: boolean = false;
+  isLanguageDropdownOpen: boolean = false;
   private isBrowser: boolean;
 
   constructor(
@@ -68,15 +69,33 @@ export class HeaderComponent implements OnInit {
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    if (!this.isMobileMenuOpen) {
+      this.isLanguageDropdownOpen = false;
+    }
+  }
+
+  toggleLanguageDropdown() {
+    this.isLanguageDropdownOpen = !this.isLanguageDropdownOpen;
+  }
+
+  getCurrentLanguageName(): string {
+    const currentLanguage = this.languages.find(
+      (lang) => lang.code === this.currentLang
+    );
+    return currentLanguage ? currentLanguage.name : '';
+  }
+
+  selectLanguage(langCode: string) {
+    this.currentLang = langCode;
+    this.translate.use(langCode);
+    if (this.isBrowser) {
+      localStorage.setItem('preferredLanguage', langCode);
+    }
+    this.isLanguageDropdownOpen = false;
   }
 
   onLanguageChange(event: any) {
     const newLang = event.target.value;
-    this.currentLang = newLang;
-    this.translate.use(newLang);
-
-    if (this.isBrowser) {
-      localStorage.setItem('preferredLanguage', newLang);
-    }
+    this.selectLanguage(newLang);
   }
 }

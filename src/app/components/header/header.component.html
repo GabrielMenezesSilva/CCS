@@ -48,9 +48,31 @@
           </li>
         </ul>
       </nav>
+
+      <!-- Seletor de Idioma Mobile -->
+      <div class="mobile-language-selector">
+        <label>{{ "HEADER.LANGUAGE" | translate }}</label>
+        <div class="custom-select" (click)="toggleLanguageDropdown()">
+          <div class="selected-option">
+            {{ getCurrentLanguageName() }}
+            <span class="arrow"></span>
+          </div>
+          <div class="options-list" [class.show]="isLanguageDropdownOpen">
+            <div
+              class="option"
+              *ngFor="let lang of languages"
+              [class.selected]="currentLang === lang.code"
+              (click)="selectLanguage(lang.code)"
+            >
+              {{ lang.name }}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="language-selector">
+    <!-- Seletor de Idioma Desktop -->
+    <div class="language-selector desktop-only">
       <select [(ngModel)]="currentLang" (change)="onLanguageChange($event)">
         <option *ngFor="let lang of languages" [value]="lang.code">
           {{ lang.code.toUpperCase() }}
