@@ -1,5 +1,5 @@
 import { Component, PLATFORM_ID, Inject, OnInit } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private translate: TranslateService,
+    private router: Router,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
@@ -97,5 +98,15 @@ export class HeaderComponent implements OnInit {
   onLanguageChange(event: any) {
     const newLang = event.target.value;
     this.selectLanguage(newLang);
+  }
+
+  navigateToLocations() {
+    this.router.navigate(['/endereco-casas-oracao']);
+    this.toggleMobileMenu();
+  }
+
+  navigateToInstitutional() {
+    this.router.navigate(['/institucional']);
+    this.toggleMobileMenu();
   }
 }
