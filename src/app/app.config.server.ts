@@ -3,10 +3,36 @@ import { provideServerRendering } from '@angular/platform-server';
 import { appConfig } from './app.config';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { Observable, from } from 'rxjs';
+import * as fs from 'fs';
+import * as path from 'path';
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+// Loader específico para o servidor que usa o sistema de arquivos
+export class TranslateServerLoader implements TranslateLoader {
+  constructor() {}
+
+  getTranslation(lang: string): Observable<any> {
+    const filePath = path.join(
+      process.cwd(),
+      'dist',
+      'congregation-chretienne',
+      'browser',
+      'assets',
+      'i18n',
+      `${lang}.json`
+    );
+    return from(
+      new Promise((resolve, reject) => {
+        fs.readFile(filePath, 'utf8', (err, data) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(JSON.parse(data));
+          }
+        });
+      })
+    );
+  }
 }
 
 const serverConfig: ApplicationConfig = {
@@ -15,8 +41,7 @@ const serverConfig: ApplicationConfig = {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
+        useClass: TranslateServerLoader,
       },
       defaultLanguage: 'pt',
       useDefaultLang: true,

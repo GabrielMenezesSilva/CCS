@@ -1,67 +1,70 @@
 import { APP_BASE_HREF } from '@angular/common';
-import { CommonEngine, isMainModule } from '@angular/ssr/node';
-import express from 'express';
-import { dirname, join, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import bootstrap from './main.server';
+import express, { Request, Response, NextFunction } from 'express';
+import { fileURLToPath } from 'url';
+import { dirname, join, resolve } from 'path';
+import { config } from './app/app.config.server';
+import { AppComponent } from './app/app.component';
+import { ApplicationRef } from '@angular/core';
+import { renderApplication } from '@angular/platform-server';
 
-const serverDistFolder = dirname(fileURLToPath(import.meta.url));
-const browserDistFolder = resolve(serverDistFolder, '../browser');
-const indexHtml = join(serverDistFolder, 'index.server.html');
+// Constantes necessárias para o caminho do diretório
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-const app = express();
-const commonEngine = new CommonEngine();
+// Configuração do servidor Express
+export function app(): express.Express {
+  const server = express();
+  const serverDistFolder = resolve(
+    __dirname,
+    '../dist/congregation-chretienne/browser'
+  );
+  const browserDistFolder = resolve(
+    __dirname,
+    '../dist/congregation-chretienne/browser'
+  );
+  const indexHtml = join(serverDistFolder, 'index.html');
 
-/**
- * Example Express Rest API endpoints can be defined here.
- * Uncomment and define endpoints as necessary.
- *
- * Example:
- * ```ts
- * app.get('/api/**', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
+  // Servir arquivos estáticos
+  server.set('view engine', 'html');
+  server.set('views', browserDistFolder);
 
-/**
- * Serve static files from /browser
- */
-app.get(
-  '**',
-  express.static(browserDistFolder, {
-    maxAge: '1y',
-    index: 'index.html'
-  }),
-);
-
-/**
- * Handle all other requests by rendering the Angular application.
- */
-app.get('**', (req, res, next) => {
-  const { protocol, originalUrl, baseUrl, headers } = req;
-
-  commonEngine
-    .render({
-      bootstrap,
-      documentFilePath: indexHtml,
-      url: `${protocol}://${headers.host}${originalUrl}`,
-      publicPath: browserDistFolder,
-      providers: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
+  // Servir arquivos estáticos do diretório dist/browser
+  server.get(
+    '*.*',
+    express.static(browserDistFolder, {
+      maxAge: '1y',
     })
-    .then((html) => res.send(html))
-    .catch((err) => next(err));
-});
+  );
 
-/**
- * Start the server if this module is the main entry point.
- * The server listens on the port defined by the `PORT` environment variable, or defaults to 4000.
- */
-if (isMainModule(import.meta.url)) {
+  // Todas as requisições regulares são tratadas pelo Angular
+  server.get('*', async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { protocol, originalUrl, baseUrl, headers } = req;
+      const url = `${protocol}://${headers.host}${originalUrl}`;
+
+      const html = await renderApplication(AppComponent as any, {
+        document: indexHtml,
+        url,
+        platformProviders: [{ provide: APP_BASE_HREF, useValue: baseUrl }],
+      });
+
+      res.send(html);
+    } catch (err: any) {
+      next(err);
+    }
+  });
+
+  return server;
+}
+
+function run(): void {
   const port = process.env['PORT'] || 4000;
-  app.listen(port, () => {
+
+  // Iniciar o servidor
+  const server = app();
+  server.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
 }
 
-export default app;
+run();
