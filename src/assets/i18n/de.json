@@ -4,7 +4,7 @@
     "ABOUT": "Über Uns",
     "LOCATIONS": "Orte",
     "CONTACT": "Kontakt",
-    "TITLE": "Christliche Gemeinde",
+    "TITLE": "Christliche Gemeinde in der Schweiz",
     "LANGUAGE": "Sprache auswählen"
   },
   "NAV": {
@@ -51,12 +51,13 @@
       "FEATURES": {
         "WORSHIP": "Zeiten und Adressen",
         "COMMUNITY": "Institutionell",
-        "YOUTH": "Jugendprogramme",
-        "OFFERINGS": "Spenden"
+        "YOUTH": "Rundschreiben",
+        "OFFERINGS": "Spenden",
+        "SERVICES": "Liste der Gottesdienste"
       }
     },
     "NEWS_SECTION": {
-      "TITLE": "Aktuelle Nachrichten",
+      "TITLE": "Wichtige Mitteilung",
       "NO_NEWS": "Derzeit sind keine Nachrichten verfügbar."
     },
     "EVENTS_SECTION": {
@@ -78,6 +79,26 @@
         "TITLE": "Kontakt",
         "EMAIL": "E-Mail: administration@congregationchretienne.ch",
         "PHONE": "Tel/Fax: 0041 22.754.16.79"
+      }
+    },
+    "SERVICES_SECTION": {
+      "TITLE": "Liste der Gottesdienste",
+      "SERVICES": {
+        "SUNDAY": {
+          "TITLE": "Sonntag",
+          "TIME": "10:00",
+          "TYPE": "Anbetungsgottesdienst"
+        },
+        "WEDNESDAY": {
+          "TITLE": "Mittwoch",
+          "TIME": "19:30",
+          "TYPE": "Lehrgottesdienst"
+        },
+        "SATURDAY": {
+          "TITLE": "Samstag",
+          "TIME": "19:30",
+          "TYPE": "Jugendgottesdienst"
+        }
       }
     }
   },

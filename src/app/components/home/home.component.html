@@ -1,9 +1,6 @@
 <div class="home-container">
   <section class="hero-welcome-section">
     <div class="hero-content">
-      <div class="welcome-text">
-        <h2>{{ "HOME.WELCOME_SECTION.TITLE" | translate }}</h2>
-      </div>
       <div class="hero-image">
         <img
           class="hero-logo"
@@ -17,6 +14,10 @@
       <div class="feature-card" (click)="navigateToLocations()">
         <i class="material-icons">home</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.WORSHIP" | translate }}</h4>
+      </div>
+      <div class="feature-card">
+        <i class="material-icons">schedule</i>
+        <h4>{{ "HOME.WELCOME_SECTION.FEATURES.SERVICES" | translate }}</h4>
       </div>
       <div class="feature-card" (click)="navigateToInstitutional()">
         <i class="material-icons">groups</i>
@@ -49,6 +50,48 @@
     <p>{{ "HOME.EVENTS_SECTION.NO_EVENTS" | translate }}</p>
   </section>
 
+  <section class="services-section">
+    <h3>
+      <i class="material-icons">schedule</i>
+      {{ "HOME.SERVICES_SECTION.TITLE" | translate }}
+    </h3>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-day">
+          {{ "HOME.SERVICES_SECTION.SERVICES.SUNDAY.TITLE" | translate }}
+        </div>
+        <div class="service-time">
+          {{ "HOME.SERVICES_SECTION.SERVICES.SUNDAY.TIME" | translate }}
+        </div>
+        <div class="service-type">
+          {{ "HOME.SERVICES_SECTION.SERVICES.SUNDAY.TYPE" | translate }}
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-day">
+          {{ "HOME.SERVICES_SECTION.SERVICES.WEDNESDAY.TITLE" | translate }}
+        </div>
+        <div class="service-time">
+          {{ "HOME.SERVICES_SECTION.SERVICES.WEDNESDAY.TIME" | translate }}
+        </div>
+        <div class="service-type">
+          {{ "HOME.SERVICES_SECTION.SERVICES.WEDNESDAY.TYPE" | translate }}
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-day">
+          {{ "HOME.SERVICES_SECTION.SERVICES.SATURDAY.TITLE" | translate }}
+        </div>
+        <div class="service-time">
+          {{ "HOME.SERVICES_SECTION.SERVICES.SATURDAY.TIME" | translate }}
+        </div>
+        <div class="service-type">
+          {{ "HOME.SERVICES_SECTION.SERVICES.SATURDAY.TYPE" | translate }}
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="info-section">
     <h3>{{ "HOME.INFO_SECTION.TITLE" | translate }}</h3>
     <div class="info-grid">
@@ -62,6 +105,22 @@
         <i class="material-icons">location_on</i>
         <h4>{{ "HOME.INFO_SECTION.LOCATION.TITLE" | translate }}</h4>
         <p>{{ "HOME.INFO_SECTION.LOCATION.ADDRESS" | translate }}</p>
+      </div>
+      <div class="info-card">
+        <i class="material-icons">church</i>
+        <h4>{{ "HOME.SERVICES_SECTION.TITLE" | translate }}</h4>
+        <p>
+          {{ "HOME.SERVICES_SECTION.SERVICES.SUNDAY.TITLE" | translate }}:
+          {{ "HOME.SERVICES_SECTION.SERVICES.SUNDAY.TIME" | translate }}
+        </p>
+        <p>
+          {{ "HOME.SERVICES_SECTION.SERVICES.WEDNESDAY.TITLE" | translate }}:
+          {{ "HOME.SERVICES_SECTION.SERVICES.WEDNESDAY.TIME" | translate }}
+        </p>
+        <p>
+          {{ "HOME.SERVICES_SECTION.SERVICES.SATURDAY.TITLE" | translate }}:
+          {{ "HOME.SERVICES_SECTION.SERVICES.SATURDAY.TIME" | translate }}
+        </p>
       </div>
       <div class="info-card">
         <i class="material-icons">contact_mail</i>

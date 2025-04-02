@@ -4,7 +4,7 @@
     "ABOUT": "Sobre",
     "LOCATIONS": "Locais",
     "CONTACT": "Contato",
-    "TITLE": "Congregação Cristã",
+    "TITLE": "Congregação Cristã na Suíça",
     "LANGUAGE": "Selecione o idioma"
   },
   "NAV": {
@@ -53,11 +53,12 @@
         "WORSHIP": "Horários e Endereços",
         "COMMUNITY": "Institucional",
         "YOUTH": "Circulares",
-        "OFFERINGS": "Ofertas"
+        "OFFERINGS": "Ofertas",
+        "SERVICES": "Lista de Serviços"
       }
     },
     "NEWS_SECTION": {
-      "TITLE": "Notícias Recentes",
+      "TITLE": "Comunicado Importante",
       "NO_NEWS": "Nenhuma notícia disponível no momento."
     },
     "EVENTS_SECTION": {

@@ -4,7 +4,7 @@
     "ABOUT": "À Propos",
     "LOCATIONS": "Lieux",
     "CONTACT": "Contact",
-    "TITLE": "Congrégation Chrétienne",
+    "TITLE": "Congrégation Chrétienne en Suisse",
     "LANGUAGE": "Sélectionnez la langue"
   },
   "NAV": {
@@ -53,11 +53,12 @@
         "WORSHIP": "Horaires et Adresses",
         "COMMUNITY": "Institutionnel",
         "YOUTH": "Circulaires",
-        "OFFERINGS": "Offrandes"
+        "OFFERINGS": "Offrandes",
+        "SERVICES": "Liste des Services"
       }
     },
     "NEWS_SECTION": {
-      "TITLE": "Actualités Récentes",
+      "TITLE": "Communication Importante",
       "NO_NEWS": "Aucune actualité disponible pour le moment."
     },
     "EVENTS_SECTION": {
@@ -79,6 +80,26 @@
         "TITLE": "Contact",
         "EMAIL": "Email : administration@congregationchretienne.ch",
         "PHONE": "Tél/Fax : 0041 22.754.16.79"
+      }
+    },
+    "SERVICES_SECTION": {
+      "TITLE": "Liste des Services",
+      "SERVICES": {
+        "SUNDAY": {
+          "TITLE": "Dimanche",
+          "TIME": "10:00",
+          "TYPE": "Culte d'Adoration"
+        },
+        "WEDNESDAY": {
+          "TITLE": "Mercredi",
+          "TIME": "19:30",
+          "TYPE": "Culte de Doctrine"
+        },
+        "SATURDAY": {
+          "TITLE": "Samedi",
+          "TIME": "19:30",
+          "TYPE": "Culte des Jeunes"
+        }
       }
     }
   },
