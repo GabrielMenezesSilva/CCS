@@ -108,7 +108,12 @@ export class AdminComponent implements OnInit {
   async addAnnouncement() {
     if (this.announcementForm.invalid) return;
     this.loading = true;
-    const data = { ...this.announcementForm.value };
+    const formValue = this.announcementForm.value;
+    const data: any = {
+      title: formValue.title,
+      content: formValue.relatorio,
+      is_important: formValue.is_important
+    };
 
     if (this.selectedFiles['announcement']) {
       const url = await this.supabase.uploadDocument(this.selectedFiles['announcement']);
