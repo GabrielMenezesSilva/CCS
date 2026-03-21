@@ -18,6 +18,10 @@ export class EventosComponent implements OnInit {
   constructor(private supabase: SupabaseService) { }
 
   async ngOnInit() {
+    if (!this.supabase.isBrowser) {
+      this.loading = false;
+      return;
+    }
     try {
       const { data, error } = await this.supabase.getEvents();
       if (error) throw error;

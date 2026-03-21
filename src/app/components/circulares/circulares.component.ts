@@ -19,6 +19,10 @@ export class CircularesComponent implements OnInit {
   constructor(private supabase: SupabaseService) { }
 
   async ngOnInit() {
+    if (!this.supabase.isBrowser) {
+      this.loading = false;
+      return;
+    }
     try {
       const { data, error } = await this.supabase.getCirculars();
       if (error) throw error;

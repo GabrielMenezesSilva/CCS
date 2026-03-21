@@ -19,6 +19,10 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router, private supabase: SupabaseService) { }
 
   async ngOnInit() {
+    if (!this.supabase.isBrowser) {
+      this.loading = false;
+      return;
+    }
     try {
       const { data, error } = await this.supabase.getImportantAnnouncements();
       if (!error && data) {

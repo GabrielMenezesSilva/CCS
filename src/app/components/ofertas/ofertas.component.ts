@@ -17,6 +17,10 @@ export class OfertasComponent implements OnInit {
   constructor(private supabase: SupabaseService) { }
 
   async ngOnInit() {
+    if (!this.supabase.isBrowser) {
+      this.loading = false;
+      return;
+    }
     try {
       const { data, error } = await this.supabase.getOfferings();
       if (error) throw error;
