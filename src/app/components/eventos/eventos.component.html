@@ -1,0 +1,30 @@
+<div class="restricted-container">
+    <div class="header-section">
+        <h2>Próximos Eventos</h2>
+        <p>Acompanhe a agenda da nossa congregação</p>
+    </div>
+
+    <div *ngIf="loading" class="loading-state">
+        <p>Carregando...</p>
+    </div>
+
+    <div *ngIf="!loading && events.length === 0" class="empty-state">
+        <p>Nenhum evento agendado no momento.</p>
+    </div>
+
+    <div class="cards-grid" *ngIf="!loading && events.length > 0">
+        <mat-card *ngFor="let event of events" class="content-card">
+            <mat-card-header>
+                <div mat-card-avatar class="event-icon">
+                    <mat-icon>event</mat-icon>
+                </div>
+                <mat-card-title>{{ event.title }}</mat-card-title>
+                <mat-card-subtitle>{{ event.event_date | date:'dd/MM/yyyy HH:mm' }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ event.description }}</p>
+                <p *ngIf="event.location"><strong>Endereço:</strong> {{ event.location }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

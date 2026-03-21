@@ -1,0 +1,26 @@
+<div class="restricted-container">
+    <div class="header-section">
+        <h2>Dízimos e Ofertas</h2>
+        <p>Informações e orientações sobre contribuições</p>
+    </div>
+
+    <div *ngIf="loading" class="loading-state">
+        <p>Carregando...</p>
+    </div>
+
+    <div *ngIf="!loading && offerings.length === 0" class="empty-state">
+        <p>Nenhuma informação de oferta disponível no momento.</p>
+    </div>
+
+    <div class="cards-grid" *ngIf="!loading && offerings.length > 0">
+        <mat-card *ngFor="let offering of offerings" class="content-card">
+            <mat-card-header>
+                <mat-card-title>{{ offering.title }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>{{ offering.description }}</p>
+                <h3 *ngIf="offering.amount">Valor de referência: {{ offering.amount | currency:'EUR' }}</h3>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

@@ -2,11 +2,7 @@
   <section class="hero-welcome-section">
     <div class="hero-content">
       <div class="hero-image">
-        <img
-          class="hero-logo"
-          src="assets/images/logoCCS.png?v=1"
-          alt="Congregation Chretienne Logo"
-        />
+        <img class="hero-logo" src="assets/images/logoCCS.png?v=1" alt="Congregation Chretienne Logo" />
       </div>
     </div>
 
@@ -15,7 +11,7 @@
         <i class="material-icons">home</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.WORSHIP" | translate }}</h4>
       </div>
-      <div class="feature-card">
+      <div class="feature-card" (click)="navigateToEventos()">
         <i class="material-icons">schedule</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.SERVICES" | translate }}</h4>
       </div>
@@ -23,11 +19,11 @@
         <i class="material-icons">groups</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.COMMUNITY" | translate }}</h4>
       </div>
-      <div class="feature-card">
+      <div class="feature-card" (click)="navigateToCirculares()">
         <i class="material-icons">campaign</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.YOUTH" | translate }}</h4>
       </div>
-      <div class="feature-card">
+      <div class="feature-card" (click)="navigateToOfertas()">
         <i class="material-icons">payments</i>
         <h4>{{ "HOME.WELCOME_SECTION.FEATURES.OFFERINGS" | translate }}</h4>
       </div>
@@ -39,6 +35,22 @@
       <i class="material-icons">newspaper</i>
       {{ "HOME.NEWS_SECTION.TITLE" | translate }}
     </h3>
-    <p>{{ "HOME.NEWS_SECTION.NO_NEWS" | translate }}</p>
+
+    <div *ngIf="loading" style="padding: 2rem; text-align: center; color: #666;">
+      <p>Buscando comunicados importantes...</p>
+    </div>
+
+    <div *ngIf="!loading && importantAnnouncements.length === 0">
+      <p>{{ "HOME.NEWS_SECTION.NO_NEWS" | translate }}</p>
+    </div>
+
+    <div class="announcements-list" *ngIf="!loading && importantAnnouncements.length > 0"
+      style="display: flex; flex-direction: column; gap: 1rem; align-items: center; margin-top: 1rem;">
+      <div class="announcement-item" *ngFor="let ann of importantAnnouncements"
+        style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%; max-width: 600px; text-align: left;">
+        <h4 style="margin: 0 0 0.5rem 0; color: #333; font-size: 1.2rem;">{{ ann.title }}</h4>
+        <small style="color: #888; font-weight: bold;">📝 {{ ann.created_at | date:'longDate' }}</small>
+      </div>
+    </div>
   </section>
 </div>

@@ -1,0 +1,30 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Acesso Restrito</mat-card-title>
+      <mat-card-subtitle>Membros da congregação</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <form (ngSubmit)="handleLogin()" #loginForm="ngForm" class="login-form">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" name="email" [(ngModel)]="email" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Senha</mat-label>
+          <input matInput type="password" name="password" [(ngModel)]="password" required>
+        </mat-form-field>
+
+        <div *ngIf="errorMsg" class="error-message">
+          {{ errorMsg }}
+        </div>
+
+        <button mat-flat-button color="primary" type="submit" [disabled]="!loginForm.form.valid || loading" class="full-width mt-2">
+          {{ loading ? 'Entrando...' : 'Entrar' }}
+        </button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,4 +1,4 @@
-import { ApplicationConfig } from '@angular/core';
+import { ApplicationConfig, isDevMode } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -9,6 +9,7 @@ import {
   withFetch,
 } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideServiceWorker } from '@angular/service-worker';
 
 // Factory function para o TranslateHttpLoader
 export function HttpLoaderFactory(http: HttpClient) {
@@ -28,6 +29,9 @@ export const appConfig: ApplicationConfig = {
       defaultLanguage: 'pt',
       useDefaultLang: true,
       isolate: false,
-    }).providers!,
+    }).providers!, provideServiceWorker('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerWhenStable:30000'
+          }),
   ],
 };

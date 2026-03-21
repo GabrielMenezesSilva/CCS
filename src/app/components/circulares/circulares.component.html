@@ -1,0 +1,31 @@
+<div class="restricted-container">
+    <div class="header-section">
+        <h2>Circulares</h2>
+        <p>Documentos e orientações oficiais da congregação</p>
+    </div>
+
+    <div *ngIf="loading" class="loading-state">
+        <p>Carregando...</p>
+    </div>
+
+    <div *ngIf="!loading && circulars.length === 0" class="empty-state">
+        <p>Nenhuma circular disponível no momento.</p>
+    </div>
+
+    <div class="cards-grid" *ngIf="!loading && circulars.length > 0">
+        <mat-card *ngFor="let circular of circulars" class="doc-card">
+            <mat-card-header>
+                <div mat-card-avatar class="doc-icon">
+                    <mat-icon>description</mat-icon>
+                </div>
+                <mat-card-title>{{ circular.title }}</mat-card-title>
+                <mat-card-subtitle>{{ circular.date | date:'dd/MM/yyyy' }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-actions>
+                <a mat-button color="primary" [href]="circular.file_url" target="_blank">
+                    <mat-icon>download</mat-icon> BAIXAR PDF
+                </a>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
