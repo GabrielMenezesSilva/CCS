@@ -1,0 +1,204 @@
+<div class="admin-container">
+    <h2>Painel Administrativo</h2>
+
+    <mat-tab-group color="primary" backgroundColor="primary" [disablePagination]="true">
+        <!-- COMUNICADOS -->
+        <mat-tab label="Comunicados">
+            <div class="tab-content">
+                <mat-card appearance="outlined" class="form-card">
+                    <mat-card-header><mat-card-title>Novo Comunicado</mat-card-title></mat-card-header>
+                    <mat-card-content>
+                        <form [formGroup]="announcementForm" (ngSubmit)="addAnnouncement()">
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Título</mat-label>
+                                <input matInput formControlName="title" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Conteúdo / Relatório</mat-label>
+                                <textarea matInput formControlName="relatorio" rows="4" required></textarea>
+                            </mat-form-field>
+
+                            <mat-checkbox formControlName="is_important" color="primary">Fixar como comunicado
+                                importante na Página Inicial?</mat-checkbox>
+
+                            <div class="form-actions">
+                                <button mat-raised-button color="primary" type="submit"
+                                    [disabled]="announcementForm.invalid || loading">
+                                    <mat-icon>add</mat-icon> Adicionar
+                                </button>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-card>
+
+                <div class="list-section">
+                    <h3>Comunicados Cadastrados</h3>
+                    <mat-card appearance="outlined" *ngFor="let item of announcements" class="list-card">
+                        <mat-card-header>
+                            <mat-card-title>{{item.title}} <span *ngIf="item.is_important"
+                                    class="badge">Importante</span></mat-card-title>
+                        </mat-card-header>
+                        <mat-card-actions>
+                            <button mat-stroked-button color="warn" (click)="deleteAnnouncement(item.id)">
+                                <mat-icon>delete</mat-icon> Excluir
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </mat-tab>
+
+        <!-- CIRCULARES -->
+        <mat-tab label="Circulares">
+            <div class="tab-content">
+                <mat-card appearance="outlined" class="form-card">
+                    <mat-card-header><mat-card-title>Nova Circular</mat-card-title></mat-card-header>
+                    <mat-card-content>
+                        <form [formGroup]="circularForm" (ngSubmit)="addCircular()">
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Título</mat-label>
+                                <input matInput formControlName="title" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>URL do Arquivo/PDF</mat-label>
+                                <input matInput formControlName="file_url" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Data</mat-label>
+                                <input matInput type="date" formControlName="date" required>
+                            </mat-form-field>
+
+                            <div class="form-actions">
+                                <button mat-raised-button color="primary" type="submit"
+                                    [disabled]="circularForm.invalid || loading">
+                                    <mat-icon>add</mat-icon> Adicionar
+                                </button>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-card>
+
+                <div class="list-section">
+                    <h3>Circulares Cadastradas</h3>
+                    <mat-card appearance="outlined" *ngFor="let item of circulars" class="list-card">
+                        <mat-card-header>
+                            <mat-card-title>{{item.title}}</mat-card-title>
+                            <mat-card-subtitle>{{item.date | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-actions>
+                            <button mat-stroked-button color="warn" (click)="deleteCircular(item.id)">
+                                <mat-icon>delete</mat-icon> Excluir
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </mat-tab>
+
+        <!-- OFERTAS -->
+        <mat-tab label="Ofertas">
+            <div class="tab-content">
+                <mat-card appearance="outlined" class="form-card">
+                    <mat-card-header><mat-card-title>Nova Opção de Oferta</mat-card-title></mat-card-header>
+                    <mat-card-content>
+                        <form [formGroup]="offeringForm" (ngSubmit)="addOffering()">
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Título / Tipo de Conta</mat-label>
+                                <input matInput formControlName="title" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Descrição / Instruções (IBAN, etc)</mat-label>
+                                <textarea matInput formControlName="description" rows="3" required></textarea>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Valor Referência (€) - Opcional</mat-label>
+                                <input matInput type="number" formControlName="amount">
+                            </mat-form-field>
+
+                            <div class="form-actions">
+                                <button mat-raised-button color="primary" type="submit"
+                                    [disabled]="offeringForm.invalid || loading">
+                                    <mat-icon>add</mat-icon> Adicionar
+                                </button>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-card>
+
+                <div class="list-section">
+                    <h3>Ofertas Cadastradas</h3>
+                    <mat-card appearance="outlined" *ngFor="let item of offerings" class="list-card">
+                        <mat-card-header>
+                            <mat-card-title>{{item.title}}</mat-card-title>
+                        </mat-card-header>
+                        <mat-card-actions>
+                            <button mat-stroked-button color="warn" (click)="deleteOffering(item.id)">
+                                <mat-icon>delete</mat-icon> Excluir
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </mat-tab>
+
+        <!-- EVENTOS -->
+        <mat-tab label="Eventos">
+            <div class="tab-content">
+                <mat-card appearance="outlined" class="form-card">
+                    <mat-card-header><mat-card-title>Novo Evento</mat-card-title></mat-card-header>
+                    <mat-card-content>
+                        <form [formGroup]="eventForm" (ngSubmit)="addEvent()">
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Título do Evento</mat-label>
+                                <input matInput formControlName="title" required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Descrição</mat-label>
+                                <textarea matInput formControlName="description" rows="3" required></textarea>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Local / Endereço (Opcional)</mat-label>
+                                <input matInput formControlName="location">
+                            </mat-form-field>
+
+                            <mat-form-field appearance="fill" class="full-width">
+                                <mat-label>Data e Hora</mat-label>
+                                <input matInput type="datetime-local" formControlName="event_date" required>
+                            </mat-form-field>
+
+                            <div class="form-actions">
+                                <button mat-raised-button color="primary" type="submit"
+                                    [disabled]="eventForm.invalid || loading">
+                                    <mat-icon>add</mat-icon> Adicionar
+                                </button>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-card>
+
+                <div class="list-section">
+                    <h3>Eventos Cadastrados</h3>
+                    <mat-card appearance="outlined" *ngFor="let item of events" class="list-card">
+                        <mat-card-header>
+                            <mat-card-title>{{item.title}}</mat-card-title>
+                            <mat-card-subtitle>{{item.event_date | date:'dd/MM/yyyy HH:mm'}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-actions>
+                            <button mat-stroked-button color="warn" (click)="deleteEvent(item.id)">
+                                <mat-icon>delete</mat-icon> Excluir
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </mat-tab>
+
+    </mat-tab-group>
+</div>

@@ -100,4 +100,45 @@ export class SupabaseService {
             .select('*')
             .order('event_date', { ascending: true });
     }
+
+    // --- Admin Database helpers (CRUD) ---
+    async createAnnouncement(data: any) {
+        return this.supabase.from('announcements').insert(data);
+    }
+    async updateAnnouncement(id: string, data: any) {
+        return this.supabase.from('announcements').update(data).eq('id', id);
+    }
+    async deleteAnnouncement(id: string) {
+        return this.supabase.from('announcements').delete().eq('id', id);
+    }
+
+    async createCircular(data: any) {
+        return this.supabase.from('circulars').insert(data);
+    }
+    async updateCircular(id: string, data: any) {
+        return this.supabase.from('circulars').update(data).eq('id', id);
+    }
+    async deleteCircular(id: string) {
+        return this.supabase.from('circulars').delete().eq('id', id);
+    }
+
+    async createOffering(data: any) {
+        return this.supabase.from('offerings').insert(data);
+    }
+    async updateOffering(id: string, data: any) {
+        return this.supabase.from('offerings').update(data).eq('id', id);
+    }
+    async deleteOffering(id: string) {
+        return this.supabase.from('offerings').delete().eq('id', id);
+    }
+
+    async createEvent(data: any) {
+        return this.supabase.from('events').insert(data);
+    }
+    async updateEvent(id: string, data: any) {
+        return this.supabase.from('events').update(data).eq('id', id);
+    }
+    async deleteEvent(id: string) {
+        return this.supabase.from('events').delete().eq('id', id);
+    }
 }

@@ -3,6 +3,7 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { SupabaseService } from '../../services/supabase.service';
 
 @Component({
   selector: 'app-header',
@@ -34,11 +35,13 @@ export class HeaderComponent implements OnInit {
   currentLang: string = 'pt';
   isMobileMenuOpen: boolean = false;
   isLanguageDropdownOpen: boolean = false;
+  isLoggedIn: boolean = false;
   private isBrowser: boolean;
 
   constructor(
     private translate: TranslateService,
     private router: Router,
+    private supabaseService: SupabaseService,
     @Inject(PLATFORM_ID) platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(platformId);
@@ -49,6 +52,10 @@ export class HeaderComponent implements OnInit {
     this.translate.setDefaultLang('pt');
 
     if (this.isBrowser) {
+      this.supabaseService.currentUser$.subscribe(user => {
+        this.isLoggedIn = !!user;
+      });
+
       // Tenta recuperar o idioma salvo no localStorage
       const savedLang = localStorage.getItem('preferredLanguage');
       if (savedLang) {
@@ -108,5 +115,11 @@ export class HeaderComponent implements OnInit {
   navigateToInstitutional() {
     this.router.navigate(['/institucional']);
     this.toggleMobileMenu();
+  }
+
+  async logout() {
+    await this.supabaseService.signOut();
+    this.router.navigate(['/']);
+    this.isMobileMenuOpen = false;
   }
 }

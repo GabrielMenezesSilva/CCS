@@ -10,22 +10,27 @@
     <nav class="main-nav">
       <ul>
         <li *ngFor="let item of menuItems">
-          <a
-            [routerLink]="item.path"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: item.path === '/' }"
-            >{{ item.translationKey | translate }}</a
-          >
+          <a [routerLink]="item.path" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: item.path === '/' }">{{ item.translationKey | translate }}</a>
         </li>
       </ul>
     </nav>
 
+    <div class="auth-buttons desktop-only" style="margin-left: 20px; display: flex; gap: 10px; align-items: center;">
+      <ng-container *ngIf="isLoggedIn; else loggedOutDesktop">
+        <a routerLink="/admin"
+          style="font-size: 14px; padding: 6px 12px; border-radius: 4px; background: #007bff; color: white; text-decoration: none;">Painel
+          Admin</a>
+        <button (click)="logout()"
+          style="background: none; border: none; color: #dc3545; cursor: pointer; font-size: 14px; font-weight: bold;">Sair</button>
+      </ng-container>
+      <ng-template #loggedOutDesktop>
+        <a routerLink="/login" style="font-size: 12px; color: #6c757d; text-decoration: none;">Acesso Restrito</a>
+      </ng-template>
+    </div>
+
     <!-- Botão Menu Mobile -->
-    <button
-      class="mobile-menu-button"
-      (click)="toggleMobileMenu()"
-      [class.active]="isMobileMenuOpen"
-    >
+    <button class="mobile-menu-button" (click)="toggleMobileMenu()" [class.active]="isMobileMenuOpen">
       <div class="hamburger-icon">
         <span></span>
         <span></span>
@@ -38,29 +43,30 @@
       <nav>
         <ul>
           <li *ngFor="let item of menuItems">
-            <a
-              [routerLink]="item.path"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: item.path === '/' }"
-              (click)="toggleMobileMenu()"
-              >{{ item.translationKey | translate }}</a
-            >
+            <a [routerLink]="item.path" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: item.path === '/' }" (click)="toggleMobileMenu()">{{
+              item.translationKey | translate }}</a>
           </li>
           <!-- Itens adicionais apenas para mobile -->
           <li class="mobile-only">
-            <a href="#">{{
-              "HOME.WELCOME_SECTION.FEATURES.OFFERINGS" | translate
-            }}</a>
+            <a routerLink="/eventos" (click)="toggleMobileMenu()">Eventos</a>
           </li>
           <li class="mobile-only">
-            <a href="#">{{
-              "HOME.WELCOME_SECTION.FEATURES.YOUTH" | translate
-            }}</a>
+            <a routerLink="/circulares" (click)="toggleMobileMenu()">Circulares</a>
           </li>
           <li class="mobile-only">
-            <a href="#">{{
-              "HOME.WELCOME_SECTION.FEATURES.SERVICES" | translate
-            }}</a>
+            <a routerLink="/ofertas" (click)="toggleMobileMenu()">Ofertas</a>
+          </li>
+
+          <li class="mobile-only auth-mobile-link"
+            style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">
+            <ng-container *ngIf="isLoggedIn; else loggedOutMobile">
+              <a routerLink="/admin" (click)="toggleMobileMenu()" style="color: #007bff;">Painel Admin</a>
+              <a (click)="logout()" style="color: #dc3545; margin-top: 10px; cursor: pointer;">Sair</a>
+            </ng-container>
+            <ng-template #loggedOutMobile>
+              <a routerLink="/login" (click)="toggleMobileMenu()" style="color: #6c757d;">Acesso Restrito</a>
+            </ng-template>
           </li>
         </ul>
       </nav>
@@ -74,12 +80,8 @@
             <span class="arrow"></span>
           </div>
           <div class="options-list" [class.show]="isLanguageDropdownOpen">
-            <div
-              class="option"
-              *ngFor="let lang of languages"
-              [class.selected]="currentLang === lang.code"
-              (click)="selectLanguage(lang.code)"
-            >
+            <div class="option" *ngFor="let lang of languages" [class.selected]="currentLang === lang.code"
+              (click)="selectLanguage(lang.code)">
               {{ lang.name }}
             </div>
           </div>
