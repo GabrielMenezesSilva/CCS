@@ -141,4 +141,26 @@ export class SupabaseService {
     async deleteEvent(id: string) {
         return this.supabase.from('events').delete().eq('id', id);
     }
+
+    // --- Storage ---
+    async uploadDocument(file: File): Promise<string | null> {
+        const fileExt = file.name.split('.').pop();
+        const fileName = `${Math.random().toString(36).substring(2, 15)}_${Date.now()}.${fileExt}`;
+        const filePath = `uploads/${fileName}`;
+
+        const { error } = await this.supabase.storage
+            .from('documents')
+            .upload(filePath, file);
+
+        if (error) {
+            console.error('Erro ao fazer upload:', error);
+            return null;
+        }
+
+        const { data } = this.supabase.storage
+            .from('documents')
+            .getPublicUrl(filePath);
+
+        return data.publicUrl;
+    }
 }

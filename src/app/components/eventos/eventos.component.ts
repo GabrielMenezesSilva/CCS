@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { SupabaseService } from '../../services/supabase.service';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-eventos',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatIconModule],
+  imports: [CommonModule, MatCardModule, MatIconModule, MatButtonModule],
   templateUrl: './eventos.component.html',
   styleUrls: ['./eventos.component.scss']
 })

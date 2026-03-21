@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SupabaseService } from '../../services/supabase.service';
@@ -8,7 +9,7 @@ import { SupabaseService } from '../../services/supabase.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, TranslateModule, MatIconModule],
+  imports: [CommonModule, TranslateModule, MatIconModule, MatButtonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

@@ -21,6 +21,11 @@
                 <p>{{ offering.description }}</p>
                 <h3 *ngIf="offering.amount">Valor de referência: {{ offering.amount | currency:'EUR' }}</h3>
             </mat-card-content>
+            <mat-card-actions *ngIf="offering.attachment_url">
+                <a mat-button color="primary" [href]="offering.attachment_url" target="_blank">
+                    <mat-icon>attachment</mat-icon> VER ANEXO/QR CODE
+                </a>
+            </mat-card-actions>
         </mat-card>
     </div>
 </div>

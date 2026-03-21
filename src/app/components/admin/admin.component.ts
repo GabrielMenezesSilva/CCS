@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -33,6 +33,18 @@ export class AdminComponent implements OnInit {
 
   loading = true;
 
+  @ViewChild('announcementFileInput') announcementFileInput!: ElementRef;
+  @ViewChild('circularFileInput') circularFileInput!: ElementRef;
+  @ViewChild('offeringFileInput') offeringFileInput!: ElementRef;
+  @ViewChild('eventFileInput') eventFileInput!: ElementRef;
+
+  selectedFiles: { [key: string]: File | null } = {
+    announcement: null,
+    circular: null,
+    offering: null,
+    event: null
+  };
+
   constructor(private fb: FormBuilder, private supabase: SupabaseService) {
     this.announcementForm = this.fb.group({
       title: ['', Validators.required],
@@ -42,7 +54,6 @@ export class AdminComponent implements OnInit {
 
     this.circularForm = this.fb.group({
       title: ['', Validators.required],
-      file_url: ['', Validators.required],
       date: ['', Validators.required]
     });
 
@@ -84,15 +95,35 @@ export class AdminComponent implements OnInit {
     }
   }
 
+  onFileSelected(event: any, type: string) {
+    const file = event.target.files[0];
+    if (file) {
+      this.selectedFiles[type] = file;
+    } else {
+      this.selectedFiles[type] = null;
+    }
+  }
+
   // --- ANNOUNCEMENTS ---
   async addAnnouncement() {
     if (this.announcementForm.invalid) return;
-    await this.supabase.createAnnouncement(this.announcementForm.value);
+    this.loading = true;
+    const data = { ...this.announcementForm.value };
+
+    if (this.selectedFiles['announcement']) {
+      const url = await this.supabase.uploadDocument(this.selectedFiles['announcement']);
+      if (url) data.attachment_url = url;
+    }
+
+    await this.supabase.createAnnouncement(data);
     this.announcementForm.reset({ is_important: false });
+    this.selectedFiles['announcement'] = null;
+    if (this.announcementFileInput) this.announcementFileInput.nativeElement.value = '';
     await this.loadData();
   }
   async deleteAnnouncement(id: string) {
     if (confirm('Tem certeza que deseja excluir?')) {
+      this.loading = true;
       await this.supabase.deleteAnnouncement(id);
       await this.loadData();
     }
@@ -101,12 +132,30 @@ export class AdminComponent implements OnInit {
   // --- CIRCULARS ---
   async addCircular() {
     if (this.circularForm.invalid) return;
-    await this.supabase.createCircular(this.circularForm.value);
+    this.loading = true;
+
+    // For circulars, file might be mandatory but we allow creating even if failed just to be safe.
+    // However, it's a best practice to ensure the file_url is present.
+    const data = { ...this.circularForm.value, file_url: '' };
+
+    if (this.selectedFiles['circular']) {
+      const url = await this.supabase.uploadDocument(this.selectedFiles['circular']);
+      if (url) data.file_url = url;
+    } else {
+      alert("Por favor, selecione o arquivo PDF da circular.");
+      this.loading = false;
+      return;
+    }
+
+    await this.supabase.createCircular(data);
     this.circularForm.reset();
+    this.selectedFiles['circular'] = null;
+    if (this.circularFileInput) this.circularFileInput.nativeElement.value = '';
     await this.loadData();
   }
   async deleteCircular(id: string) {
     if (confirm('Tem certeza que deseja excluir?')) {
+      this.loading = true;
       await this.supabase.deleteCircular(id);
       await this.loadData();
     }
@@ -115,12 +164,23 @@ export class AdminComponent implements OnInit {
   // --- OFFERINGS ---
   async addOffering() {
     if (this.offeringForm.invalid) return;
-    await this.supabase.createOffering(this.offeringForm.value);
+    this.loading = true;
+    const data = { ...this.offeringForm.value };
+
+    if (this.selectedFiles['offering']) {
+      const url = await this.supabase.uploadDocument(this.selectedFiles['offering']);
+      if (url) data.attachment_url = url;
+    }
+
+    await this.supabase.createOffering(data);
     this.offeringForm.reset();
+    this.selectedFiles['offering'] = null;
+    if (this.offeringFileInput) this.offeringFileInput.nativeElement.value = '';
     await this.loadData();
   }
   async deleteOffering(id: string) {
     if (confirm('Tem certeza que deseja excluir?')) {
+      this.loading = true;
       await this.supabase.deleteOffering(id);
       await this.loadData();
     }
@@ -129,12 +189,23 @@ export class AdminComponent implements OnInit {
   // --- EVENTS ---
   async addEvent() {
     if (this.eventForm.invalid) return;
-    await this.supabase.createEvent(this.eventForm.value);
+    this.loading = true;
+    const data = { ...this.eventForm.value };
+
+    if (this.selectedFiles['event']) {
+      const url = await this.supabase.uploadDocument(this.selectedFiles['event']);
+      if (url) data.attachment_url = url;
+    }
+
+    await this.supabase.createEvent(data);
     this.eventForm.reset();
+    this.selectedFiles['event'] = null;
+    if (this.eventFileInput) this.eventFileInput.nativeElement.value = '';
     await this.loadData();
   }
   async deleteEvent(id: string) {
     if (confirm('Tem certeza que deseja excluir?')) {
+      this.loading = true;
       await this.supabase.deleteEvent(id);
       await this.loadData();
     }
