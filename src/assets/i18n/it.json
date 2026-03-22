@@ -163,5 +163,36 @@
       "MESSAGE": "Messaggio",
       "SEND": "Invia"
     }
+  },
+  "COMMON": {
+    "LOADING": "Caricamento..."
+  },
+  "OFFERINGS": {
+    "TITLE": "Offerte",
+    "SUBTITLE": "I contributi sono volontari e anonimi.",
+    "EMPTY_STATE": "Nessuna offerta trovata.",
+    "REFERENCE_VALUE": "Valore di Riferimento",
+    "VIEW_ATTACHMENT": "Visualizza Allegato",
+    "QR_CODE_TITLE": "Fai la tua offerta tramite QR Code",
+    "BANK_DETAILS_TITLE": "Coordinate Bancarie",
+    "BANK_DETAILS": {
+      "BANK": "Banca",
+      "IBAN": "IBAN",
+      "SWIFT": "BIC/SWIFT",
+      "HOLDER": "Titolare del Conto"
+    }
+  },
+  "CIRCULAR": {
+    "TITLE": "Circolari e Rapporti",
+    "SUBTITLE": "Documenti ufficiali e newsletter.",
+    "EMPTY_STATE": "Nessuna circolare trovata.",
+    "DOWNLOAD_PDF": "Scarica PDF"
+  },
+  "EVENTS": {
+    "TITLE": "Eventi e Prove Regionali",
+    "SUBTITLE": "Programmazione degli eventi.",
+    "EMPTY_STATE": "Nessun evento trovato.",
+    "ADDRESS": "Indirizzo",
+    "VIEW_FLYER": "Visualizza Locandina"
   }
-} 
+}

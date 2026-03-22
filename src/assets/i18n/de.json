@@ -163,5 +163,36 @@
       "MESSAGE": "Nachricht",
       "SEND": "Senden"
     }
+  },
+  "COMMON": {
+    "LOADING": "Lädt..."
+  },
+  "OFFERINGS": {
+    "TITLE": "Opfergaben",
+    "SUBTITLE": "Beiträge sind freiwillig und anonym.",
+    "EMPTY_STATE": "Keine Opfergaben gefunden.",
+    "REFERENCE_VALUE": "Referenzwert",
+    "VIEW_ATTACHMENT": "Anhang Ansehen",
+    "QR_CODE_TITLE": "Geben Sie Ihre Opfergabe per QR-Code",
+    "BANK_DETAILS_TITLE": "Bankdaten",
+    "BANK_DETAILS": {
+      "BANK": "Bank",
+      "IBAN": "IBAN",
+      "SWIFT": "BIC/SWIFT",
+      "HOLDER": "Kontoinhaber"
+    }
+  },
+  "CIRCULAR": {
+    "TITLE": "Rundschreiben und Berichte",
+    "SUBTITLE": "Offizielle Dokumente und Newsletter.",
+    "EMPTY_STATE": "Keine Rundschreiben gefunden.",
+    "DOWNLOAD_PDF": "PDF Herunterladen"
+  },
+  "EVENTS": {
+    "TITLE": "Veranstaltungen und Regionale Proben",
+    "SUBTITLE": "Veranstaltungsprogramm.",
+    "EMPTY_STATE": "Keine Veranstaltungen gefunden.",
+    "ADDRESS": "Adresse",
+    "VIEW_FLYER": "Flyer Ansehen"
   }
-} 
+}

@@ -1,24 +1,14 @@
 <div class="locations-container">
   <h1 class="locations-header">{{ "LOCATIONS.TITLE" | translate }}</h1>
   <div class="locations-accordion">
-    <div
-      *ngFor="let location of locations; let i = index"
-      class="location-accordion-item"
-      [class.expanded]="expandedIndex === i"
-    >
-      <div
-        class="location-header"
-        (click)="isBrowser && toggleAccordion($event)"
-      >
+    <div *ngFor="let location of locations; let i = index" class="location-accordion-item"
+      [class.expanded]="expandedIndex === i">
+      <div class="location-header" (click)="isBrowser && toggleAccordion($event)">
         <div class="location-title">
           <h2>{{ location.city }}</h2>
           <p>{{ location.country }}</p>
         </div>
-        <a
-          [href]="getPhoneNumber(location.phone)"
-          class="location-phone"
-          (click)="$event.stopPropagation()"
-        >
+        <a [href]="getPhoneNumber(location.phone)" class="location-phone" (click)="$event.stopPropagation()">
           <i class="material-icons">phone</i>
           {{ location.phone }}
         </a>
@@ -43,7 +33,7 @@
               {{ service.time }}
             </p>
             <p class="service-type">
-              <i class="material-icons">church</i>
+              <i class="material-icons">house</i>
               {{ "LOCATIONS.SERVICES." + service.type | translate }}
             </p>
             <p class="service-language">
@@ -52,10 +42,7 @@
             </p>
           </div>
 
-          <div
-            *ngIf="location.musicRehearsal"
-            class="service-item music-rehearsal"
-          >
+          <div *ngIf="location.musicRehearsal" class="service-item music-rehearsal">
             <p class="service-day">
               <i class="material-icons">music_note</i>
               {{ "LOCATIONS.DAYS." + location.musicRehearsal.day | translate }}

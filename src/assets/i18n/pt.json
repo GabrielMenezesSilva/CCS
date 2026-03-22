@@ -144,5 +144,36 @@
       "MESSAGE": "Mensagem",
       "SEND": "Enviar"
     }
+  },
+  "COMMON": {
+    "LOADING": "Carregando..."
+  },
+  "OFFERINGS": {
+    "TITLE": "Ofertas",
+    "SUBTITLE": "As contribuições são voluntárias e anônimas.",
+    "EMPTY_STATE": "Nenhuma oferta encontrada.",
+    "REFERENCE_VALUE": "Valor de Referência",
+    "VIEW_ATTACHMENT": "Ver Anexo",
+    "QR_CODE_TITLE": "Faça sua oferta via QR Code",
+    "BANK_DETAILS_TITLE": "Dados Bancários",
+    "BANK_DETAILS": {
+      "BANK": "Banco",
+      "IBAN": "IBAN",
+      "SWIFT": "BIC/SWIFT",
+      "HOLDER": "Titular"
+    }
+  },
+  "CIRCULAR": {
+    "TITLE": "Circulares e Relatórios",
+    "SUBTITLE": "Documentos oficiais e informativos.",
+    "EMPTY_STATE": "Nenhuma circular encontrada.",
+    "DOWNLOAD_PDF": "Baixar PDF"
+  },
+  "EVENTS": {
+    "TITLE": "Eventos e Ensaios Regionais",
+    "SUBTITLE": "Programação de eventos.",
+    "EMPTY_STATE": "Nenhum evento encontrado.",
+    "ADDRESS": "Endereço",
+    "VIEW_FLYER": "Ver Cartaz"
   }
-} 
+}

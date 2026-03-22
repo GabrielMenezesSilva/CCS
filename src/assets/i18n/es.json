@@ -1,4 +1,179 @@
-"NEWS_SECTION": {
-  "TITLE": "Avisos Importantes",
-  "NO_NEWS": "No hay noticias disponibles en este momento."
-}, 
+{
+  "HEADER": {
+    "HOME": "Inicio",
+    "ABOUT": "Sobre",
+    "LOCATIONS": "Locales",
+    "CONTACT": "Contacto",
+    "TITLE": "Congregación Cristiana en Suiza",
+    "LANGUAGE": "Seleccionar idioma"
+  },
+  "NAV": {
+    "HOME": "Inicio",
+    "INSTITUTIONAL": "Institucional",
+    "LOCATIONS": "Casas de Oración"
+  },
+  "LOCATIONS": {
+    "TITLE": "Direcciones de las Casas de Oración y Horarios de Cultos",
+    "SERVICES": {
+      "WORSHIP": "Culto",
+      "YOUTH": "Reunión de Jóvenes",
+      "MUSIC_REHEARSAL": "Ensayo de Música",
+      "OFFERINGS": "Ofrendas"
+    },
+    "DAYS": {
+      "WEDNESDAY": "Miércoles",
+      "THURSDAY": "Jueves",
+      "SATURDAY": "Sábado",
+      "SUNDAY": "Domingo",
+      "FIRST_SATURDAY": "Primer Sábado",
+      "SECOND_SUNDAY": "Segundo Domingo",
+      "THIRD_SUNDAY": "Tercer Domingo",
+      "FOURTH_SUNDAY": "Cuarto Domingo",
+      "LAST_SUNDAY": "Último Domingo del Mes",
+      "FIRST_WEDNESDAY": "Primer Miércoles",
+      "SECOND_WEDNESDAY": "Segundo Miércoles",
+      "THIRD_WEDNESDAY": "Tercer Miércoles",
+      "FOURTH_WEDNESDAY": "Cuarto Miércoles",
+      "LAST_WEDNESDAY": "Último Miércoles del Mes"
+    }
+  },
+  "HOME": {
+    "TITLE": "Bienvenido a la Congregación Cristiana en Suiza",
+    "SUBTITLE": "Una Comunidad de Fe y Amor",
+    "DESCRIPTION": "La Congregación Cristiana en Suiza es una comunidad religiosa dedicada al servicio de Dios y al prójimo. Nuestra misión es compartir el amor de Cristo y crear un ambiente acogedor para todos.",
+    "FEATURES": {
+      "WORSHIP": "Horarios y Direcciones",
+      "COMMUNITY": "Institucional",
+      "YOUTH": "Circulares",
+      "OFFERINGS": "Ofrendas"
+    },
+    "WELCOME_SECTION": {
+      "TITLE": "Bienvenido a Nuestra Comunidad",
+      "FEATURES": {
+        "WORSHIP": "Horarios y Direcciones",
+        "COMMUNITY": "Institucional",
+        "YOUTH": "Circulares",
+        "OFFERINGS": "Ofrendas",
+        "SERVICES": "Lista de Servicios"
+      }
+    },
+    "NEWS_SECTION": {
+      "TITLE": "Avisos Importantes",
+      "NO_NEWS": "No hay noticias disponibles en este momento."
+    },
+    "EVENTS_SECTION": {
+      "TITLE": "Próximos Eventos",
+      "NO_EVENTS": "Ningún evento programado en este momento."
+    },
+    "INFO_SECTION": {
+      "TITLE": "Información Importante",
+      "WORSHIP_TIMES": {
+        "TITLE": "Horarios de Cultos",
+        "SUNDAY": "Domingo: 10:00",
+        "WEDNESDAY": "Miércoles: 19:30"
+      },
+      "LOCATION": {
+        "TITLE": "Ubicación",
+        "ADDRESS": "Route du Mandement, 197\n1242 Satigny (GE)\nSuiza"
+      },
+      "CONTACT": {
+        "TITLE": "Contacto",
+        "EMAIL": "Email: administration@congregationchretienne.ch",
+        "PHONE": "Tel/Fax: 0041 22.754.16.79"
+      }
+    }
+  },
+  "INSTITUTIONAL": {
+    "TITLE": "Institucional",
+    "SUBTITLE": "Congregación Cristiana en Suiza",
+    "PREFACE": {
+      "TITLE": "Prefacio",
+      "CONTENT": "LA CONGREGACIÓN CRISTIANA EN SUIZA no permite la publicación de informaciones o datos en Internet por encima de sí misma. Quienes acceden a \"otro sitio web\" que no se considera un sitio web \"oficial\", proporcionan información, actúan en su propio interés y a su propio riesgo. La comunidad cristiana solo se expresa a través de su Comité Ejecutivo (Equipo de Administración) o el Consejo de Ancianos.\n\nLA CONGREGACIÓN CRISTIANA es una comunidad religiosa enteramente fundada en la doctrina y Fe apostólicas contenidas en el Nuevo Testamento de la Santa Biblia."
+    },
+    "HISTORY": {
+      "TITLE": "Historia",
+      "CONTENT": "LA CONGREGACIÓN CRISTIANA se originó de un pequeño grupo de evangélicos italianos que, en la ciudad de Chicago en los Estados Unidos de América, en el año 1904, comenzó a reunirse en sus hogares, buscando la guía Divina para seguir las enseñanzas bíblicas cristianas, dentro de la simplicidad de la Fe apostólica.\n\nA este grupo, desprovisto de cualquier denominación y sin ninguna propaganda o forma especial de comunicación, se unieron muchas otras personas, sintiéndose movidas por Dios. De esta misma manera, se formaron en varios países grupos imbuidos de los mismos sentimientos y comprensión de la Palabra de Dios.\n\nCon el aumento en el número de personas que profesan los mismos principios de adoración a Dios y no habiendo lugares privados donde fuera posible reunirse, se hizo necesario adquirir lugares para este propósito. A partir de entonces, hubo la necesidad de crear una institución con personalidad jurídica para poder legalizar las reuniones y titularizar la propiedad de estos inmuebles. Por esta razón, esta entidad fue denominada \"CONGREGACIÓN CRISTIANA\", esto es, simple reunión de personas, sin ningún formalismo o personalismo, apenas imbuidas de los mismos valores espirituales cristianos de adoración a Dios."
+    },
+    "CLARIFICATION": {
+      "TITLE": "Aclaraciones",
+      "CONTENT": "Los ingresos provenientes de sus miembros deben provenir de ofrendas voluntarias y anónimas, cuyos valores deben ser aplicados íntegramamente en las finalidades para las cuales fueron ofrecidas, estando prohibido cualquier carácter de obligatoriedad de su prestación o vínculo con la integración o permanencia de los miembros.\n\nEl titular de cualquier cargo espiritual o de administración deberá mantenerse a través de su trabajo o medios propios, ya que está prohibido cualquier tipo de remuneración o retribución por el ejercicio de estas actividades o por la ministración de servicios espirituales o sacramentos.\n\nLA CONGREGACIÓN CRISTIANA no tiene ningún vínculo con partidos o ideologías políticas y los miembros de cargos espirituales o de administración deben abstenerse de aceptar cargos o encargos políticos, siendo incompatible el ejercicio concomitante de funciones en ambas esferas (cargo o encargo político y función espiritual o administrativa en la iglesia). Se recomienda a los miembros cumplir sus deberes cívicos como ciudadanos, de acuerdo con las leyes del país.\n\nTambién está prohibido a los miembros, integrantes del Ministerio y de la Administración utilizar el nombre de LA CONGREGACIÓN CRISTIANA con fines políticos, electorales o ideológicos.\n\nLA CONGREGACIÓN CRISTIANA no mantiene controversias sobre sus puntos de doctrina o su forma de organización, ni autoriza a nadie a hacerlo en su nombre.\n\nLos integrantes del Ministerio (Ancianos, Diáconos y Colaboradores) y la Administración de LA CONGREGACIÓN CRISTIANA no mantienen un \"sitio web\" o cualquier otro tipo de comunicación con el objetivo de atender cuestiones espirituales o incluso aclarar puntos de doctrina o principios de Fe.\n\nLA CONGREGACIÓN CRISTIANA no hace ningún tipo de propaganda de su doctrina, ni utiliza ningún medio de divulgación pública de sus principios de fe. Quien tenga un interés espiritual en conocer su doctrina debe asistir a sus cultos en cualquiera de sus iglesias.\n\nLA CONGREGACIÓN CRISTIANA EN SUIZA es de la misma fe y doctrina que otras congregaciones en otros países, como la Congregación Cristiana en el Brasil, Congregación Cristiana en España, Congregación Cristiana en Alemania, Congregación Cristiana en el Reino Unido, Congregación Cristiana en los Estados Unidos, Congregación Cristiana en Francia, Congregación Cristiana en Italia, Congregación Cristiana en Portugal y otras partes del mundo donde está representada."
+    },
+    "CONTACT": {
+      "TITLE": "Contacto",
+      "ADDRESS": {
+        "TITLE": "Dirección",
+        "CONTENT": "Centro Administrativo - Route du Mandement, 197\n1242 Satigny (GE) - Suiza"
+      },
+      "EMAIL": {
+        "TITLE": "E-mail",
+        "CONTENT": "administration@congregationchretienne.ch"
+      },
+      "PHONE": {
+        "TITLE": "Teléfono",
+        "CONTENT": "Tel/Fax: 0041 22.754.16.79"
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "Sobre",
+    "HISTORY": {
+      "TITLE": "Nuestra Historia",
+      "DESCRIPTION": "La Congregación Cristiana en Suiza tiene una rica historia de servicio y dedicación a la comunidad."
+    },
+    "MISSION": {
+      "TITLE": "Nuestra Misión",
+      "DESCRIPTION": "Nuestra misión es compartir el amor de Cristo y crear un ambiente acogedor para todos."
+    },
+    "VALUES": {
+      "TITLE": "Nuestros Valores",
+      "FAITH": "Fe",
+      "LOVE": "Amor",
+      "SERVICE": "Servicio",
+      "COMMUNITY": "Comunidad"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "DESCRIPTION": "Póngase en contacto con nosotros para obtener más información o para participar en nuestros cultos.",
+    "ADDRESS": "Dirección",
+    "PHONE": "Teléfono",
+    "EMAIL": "Email",
+    "FORM": {
+      "NAME": "Nombre",
+      "EMAIL": "Email",
+      "MESSAGE": "Mensaje",
+      "SEND": "Enviar"
+    }
+  },
+  "COMMON": {
+    "LOADING": "Cargando..."
+  },
+  "OFFERINGS": {
+    "TITLE": "Ofrendas",
+    "SUBTITLE": "Las contribuciones son voluntarias y anónimas.",
+    "EMPTY_STATE": "No se encontraron ofrendas.",
+    "REFERENCE_VALUE": "Valor de Referencia",
+    "VIEW_ATTACHMENT": "Ver Adjunto",
+    "QR_CODE_TITLE": "Haga su ofrenda vía código QR",
+    "BANK_DETAILS_TITLE": "Datos Bancarios",
+    "BANK_DETAILS": {
+      "BANK": "Banco",
+      "IBAN": "IBAN",
+      "SWIFT": "BIC/SWIFT",
+      "HOLDER": "Titular"
+    }
+  },
+  "CIRCULAR": {
+    "TITLE": "Circulares y Reportes",
+    "SUBTITLE": "Documentos oficiales e informativos.",
+    "EMPTY_STATE": "No se encontraron circulares.",
+    "DOWNLOAD_PDF": "Descargar PDF"
+  },
+  "EVENTS": {
+    "TITLE": "Eventos y Ensayos Regionales",
+    "SUBTITLE": "Programación de eventos.",
+    "EMPTY_STATE": "Ningún evento encontrado.",
+    "ADDRESS": "Dirección",
+    "VIEW_FLYER": "Ver Cartel"
+  }
+}

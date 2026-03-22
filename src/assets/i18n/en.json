@@ -1,4 +1,179 @@
-"NEWS_SECTION": {
-  "TITLE": "Important Notices",
-  "NO_NEWS": "No news available at the moment."
-}, 
+{
+  "HEADER": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "LOCATIONS": "Locations",
+    "CONTACT": "Contact",
+    "TITLE": "Christian Congregation in Switzerland",
+    "LANGUAGE": "Select language"
+  },
+  "NAV": {
+    "HOME": "Home",
+    "INSTITUTIONAL": "Institutional",
+    "LOCATIONS": "Houses of Prayer"
+  },
+  "LOCATIONS": {
+    "TITLE": "Houses of Prayer Addresses and Worship Schedules",
+    "SERVICES": {
+      "WORSHIP": "Worship Service",
+      "YOUTH": "Youth Meeting",
+      "MUSIC_REHEARSAL": "Music Rehearsal",
+      "OFFERINGS": "Offerings"
+    },
+    "DAYS": {
+      "WEDNESDAY": "Wednesday",
+      "THURSDAY": "Thursday",
+      "SATURDAY": "Saturday",
+      "SUNDAY": "Sunday",
+      "FIRST_SATURDAY": "First Saturday",
+      "SECOND_SUNDAY": "Second Sunday",
+      "THIRD_SUNDAY": "Third Sunday",
+      "FOURTH_SUNDAY": "Fourth Sunday",
+      "LAST_SUNDAY": "Last Sunday of the Month",
+      "FIRST_WEDNESDAY": "First Wednesday",
+      "SECOND_WEDNESDAY": "Second Wednesday",
+      "THIRD_WEDNESDAY": "Third Wednesday",
+      "FOURTH_WEDNESDAY": "Fourth Wednesday",
+      "LAST_WEDNESDAY": "Last Wednesday of the Month"
+    }
+  },
+  "HOME": {
+    "TITLE": "Welcome to the Christian Congregation in Switzerland",
+    "SUBTITLE": "A Community of Faith and Love",
+    "DESCRIPTION": "The Christian Congregation in Switzerland is a religious community dedicated to serving God and our neighbor. Our mission is to share the love of Christ and create a welcoming environment for all.",
+    "FEATURES": {
+      "WORSHIP": "Schedules and Addresses",
+      "COMMUNITY": "Institutional",
+      "YOUTH": "Circulars",
+      "OFFERINGS": "Offerings"
+    },
+    "WELCOME_SECTION": {
+      "TITLE": "Welcome to Our Community",
+      "FEATURES": {
+        "WORSHIP": "Schedules and Addresses",
+        "COMMUNITY": "Institutional",
+        "YOUTH": "Circulars",
+        "OFFERINGS": "Offerings",
+        "SERVICES": "List of Services"
+      }
+    },
+    "NEWS_SECTION": {
+      "TITLE": "Important Notices",
+      "NO_NEWS": "No news available at the moment."
+    },
+    "EVENTS_SECTION": {
+      "TITLE": "Upcoming Events",
+      "NO_EVENTS": "No events scheduled at the moment."
+    },
+    "INFO_SECTION": {
+      "TITLE": "Important Information",
+      "WORSHIP_TIMES": {
+        "TITLE": "Worship Schedules",
+        "SUNDAY": "Sunday: 10:00",
+        "WEDNESDAY": "Wednesday: 19:30"
+      },
+      "LOCATION": {
+        "TITLE": "Location",
+        "ADDRESS": "Route du Mandement, 197\n1242 Satigny (GE)\nSwitzerland"
+      },
+      "CONTACT": {
+        "TITLE": "Contact",
+        "EMAIL": "Email: administration@congregationchretienne.ch",
+        "PHONE": "Tel/Fax: 0041 22.754.16.79"
+      }
+    }
+  },
+  "INSTITUTIONAL": {
+    "TITLE": "Institutional",
+    "SUBTITLE": "Christian Congregation in Switzerland",
+    "PREFACE": {
+      "TITLE": "Preface",
+      "CONTENT": "THE CHRISTIAN CONGREGATION IN SWITZERLAND does not allow the publication of information or data on the Internet above itself. Those who access \"another website\" that is not considered an official \"website\", provide information, act in their own interest and at their own risk. The Christian community only expresses itself through its Executive Committee (Administration Team) or the Council of Elders.\n\nTHE CHRISTIAN CONGREGATION is a religious community entirely founded on the apostolic doctrine and Faith contained in the New Testament of the Holy Bible."
+    },
+    "HISTORY": {
+      "TITLE": "History",
+      "CONTENT": "THE CHRISTIAN CONGREGATION originated from a small group of Italian evangelicals who, in the city of Chicago in the United States of America, in the year 1904, began meeting in their homes, seeking Divine guidance to follow Christian biblical teachings, within the simplicity of the apostolic Faith.\n\nTo this group, devoid of any denomination and without any propaganda or special form of communication, many other people joined, feeling moved by God. In this same way, groups imbued with the same feelings and understanding of the Word of God were formed in several countries.\n\nWith the increase in the number of people professing the same principles of worship to God and there being no private places where it was possible to meet, it became necessary to acquire places for this purpose, and from then on, there was the need to create an institution with legal personality to be able to legalize the meetings and title the ownership of these properties. For this reason, this entity was named \"CHRISTIAN CONGREGATION\", that is, a simple gathering of people, without any formalism or personalism, solely imbued with the same Christian spiritual values of worship to God."
+    },
+    "CLARIFICATION": {
+      "TITLE": "Clarifications",
+      "CONTENT": "The revenues coming from its members must derive from voluntary and anonymous offerings, whose values must be applied entirely to the purposes for which they were offered, being forbidden any mandatory character of their provision or link to the integration or permanence of members.\n\nThe holder of any spiritual or administration office must maintain himself through his work or own means, since any kind of remuneration or retribution for the exercise of these activities or for the ministration of spiritual services or sacraments is forbidden.\n\nTHE CHRISTIAN CONGREGATION has no link with political parties or ideologies and the members of spiritual or administration offices must refrain from accepting political offices or duties, being incompatible the concomitant exercise of functions in both spheres (political office or duty and spiritual or administrative function in the church). Members are recommended to fulfill their civic duties as citizens, according to the laws of the country.\n\nIt is also forbidden for members, members of the Ministry and Administration to use the name of THE CHRISTIAN CONGREGATION for political, electoral or ideological purposes.\n\nTHE CHRISTIAN CONGREGATION does not maintain controversies over its points of doctrine or its form of organization, nor does it authorize anyone to do so in its name.\n\nThe members of the Ministry (Elders, Deacons and Cooperators) and the Administration of THE CHRISTIAN CONGREGATION do not maintain a \"website\" or any other type of communication aiming to attend spiritual issues or even clarify points of doctrine or principles of Faith.\n\nTHE CHRISTIAN CONGREGATION does not make any kind of propaganda of its doctrine, nor does it use any means of public disclosure of its principles of faith. Whoever has a spiritual interest in knowing its doctrine should attend its worship services in any of its churches.\n\nTHE CHRISTIAN CONGREGATION IN SWITZERLAND is of the same faith and doctrine as other congregations in other countries, such as the Christian Congregation in Brazil, Christian Congregation in Spain, Christian Congregation in Germany, Christian Congregation in the United Kingdom, Christian Congregation in the United States, Christian Congregation in France, Christian Congregation in Italy, Christian Congregation in Portugal and other parts of the world where it is represented."
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "ADDRESS": {
+        "TITLE": "Address",
+        "CONTENT": "Administrative Center - Route du Mandement, 197\n1242 Satigny (GE) - Switzerland"
+      },
+      "EMAIL": {
+        "TITLE": "E-mail",
+        "CONTENT": "administration@congregationchretienne.ch"
+      },
+      "PHONE": {
+        "TITLE": "Phone",
+        "CONTENT": "Tel/Fax: 0041 22.754.16.79"
+      }
+    }
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "HISTORY": {
+      "TITLE": "Our History",
+      "DESCRIPTION": "The Christian Congregation in Switzerland has a rich history of service and dedication to the community."
+    },
+    "MISSION": {
+      "TITLE": "Our Mission",
+      "DESCRIPTION": "Our mission is to share the love of Christ and create a welcoming environment for all."
+    },
+    "VALUES": {
+      "TITLE": "Our Values",
+      "FAITH": "Faith",
+      "LOVE": "Love",
+      "SERVICE": "Service",
+      "COMMUNITY": "Community"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "Get in touch with us for more information or to participate in our worship services.",
+    "ADDRESS": "Address",
+    "PHONE": "Phone",
+    "EMAIL": "Email",
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "MESSAGE": "Message",
+      "SEND": "Send"
+    }
+  },
+  "COMMON": {
+    "LOADING": "Loading..."
+  },
+  "OFFERINGS": {
+    "TITLE": "Offerings",
+    "SUBTITLE": "Contributions are voluntary and anonymous.",
+    "EMPTY_STATE": "No offerings found.",
+    "REFERENCE_VALUE": "Reference Value",
+    "VIEW_ATTACHMENT": "View Attachment",
+    "QR_CODE_TITLE": "Make your offering via QR Code",
+    "BANK_DETAILS_TITLE": "Bank Details",
+    "BANK_DETAILS": {
+      "BANK": "Bank",
+      "IBAN": "IBAN",
+      "SWIFT": "BIC/SWIFT",
+      "HOLDER": "Account Holder"
+    }
+  },
+  "CIRCULAR": {
+    "TITLE": "Circulars and Reports",
+    "SUBTITLE": "Official documents and newsletters.",
+    "EMPTY_STATE": "No circulars found.",
+    "DOWNLOAD_PDF": "Download PDF"
+  },
+  "EVENTS": {
+    "TITLE": "Events and Regional Rehearsals",
+    "SUBTITLE": "Event programming.",
+    "EMPTY_STATE": "No events found.",
+    "ADDRESS": "Address",
+    "VIEW_FLYER": "View Flyer"
+  }
+}

@@ -4,11 +4,12 @@ import { SupabaseService } from '../../services/supabase.service';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-circulares',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatIconModule, MatButtonModule],
+  imports: [CommonModule, MatCardModule, MatIconModule, MatButtonModule, TranslateModule],
   templateUrl: './circulares.component.html',
   styleUrls: ['./circulares.component.scss']
 })

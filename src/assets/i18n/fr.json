@@ -164,5 +164,36 @@
       "MESSAGE": "Message",
       "SEND": "Envoyer"
     }
+  },
+  "COMMON": {
+    "LOADING": "Chargement..."
+  },
+  "OFFERINGS": {
+    "TITLE": "Offrandes",
+    "SUBTITLE": "Les contributions sont volontaires et anonymes.",
+    "EMPTY_STATE": "Aucune offrande trouvée.",
+    "REFERENCE_VALUE": "Valeur de Référence",
+    "VIEW_ATTACHMENT": "Voir la Pièce Jointe",
+    "QR_CODE_TITLE": "Faites votre offrande via QR Code",
+    "BANK_DETAILS_TITLE": "Coordonnées Bancaires",
+    "BANK_DETAILS": {
+      "BANK": "Banque",
+      "IBAN": "IBAN",
+      "SWIFT": "BIC/SWIFT",
+      "HOLDER": "Titulaire"
+    }
+  },
+  "CIRCULAR": {
+    "TITLE": "Circulaires et Rapports",
+    "SUBTITLE": "Documents officiels et lettres d'information.",
+    "EMPTY_STATE": "Aucune circulaire trouvée.",
+    "DOWNLOAD_PDF": "Télécharger le PDF"
+  },
+  "EVENTS": {
+    "TITLE": "Événements et Répétitions Régionales",
+    "SUBTITLE": "Programmation des événements.",
+    "EMPTY_STATE": "Aucun événement trouvé.",
+    "ADDRESS": "Adresse",
+    "VIEW_FLYER": "Voir l'Affiche"
   }
-} 
+}
