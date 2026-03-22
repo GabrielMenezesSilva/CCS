@@ -13,17 +13,14 @@ export const routes: Routes = [
   {
     path: 'circulares',
     loadComponent: () => import('./components/circulares/circulares.component').then(m => m.CircularesComponent),
-    canActivate: [AuthGuard]
   },
   {
     path: 'ofertas',
     loadComponent: () => import('./components/ofertas/ofertas.component').then(m => m.OfertasComponent),
-    canActivate: [AuthGuard]
   },
   {
     path: 'eventos',
     loadComponent: () => import('./components/eventos/eventos.component').then(m => m.EventosComponent),
-    canActivate: [AuthGuard]
   },
   {
     path: 'admin',
