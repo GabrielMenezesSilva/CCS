@@ -17,39 +17,17 @@
                 <p><strong>{{ 'OFFERINGS.BANK_DETAILS.HOLDER' | translate }}:</strong> Congregação Cristã na Suíça</p>
             </mat-card-content>
         </mat-card>
-        
+
         <mat-card class="content-card qr-card">
             <mat-card-header>
                 <mat-card-title>{{ 'OFFERINGS.QR_CODE_TITLE' | translate }}</mat-card-title>
             </mat-card-header>
             <mat-card-content style="text-align: center; padding: 20px;">
-                <img src="assets/images/provisional-qr.png" alt="QR Code" style="max-width: 200px; height: auto; outline: 1px solid #ccc; padding: 10px; border-radius: 8px;"/>
+                <img src="assets/images/provisional-qr.png" alt="QR Code"
+                    style="max-width: 200px; height: auto; outline: 1px solid #ccc; padding: 10px; border-radius: 8px;" />
             </mat-card-content>
         </mat-card>
     </div>
 
-    <div *ngIf="loading" class="loading-state">
-        <p>{{ 'COMMON.LOADING' | translate }}</p>
-    </div>
 
-    <div *ngIf="!loading && offerings.length === 0" class="empty-state">
-        <p>{{ 'OFFERINGS.EMPTY_STATE' | translate }}</p>
-    </div>
-
-    <div class="cards-grid" *ngIf="!loading && offerings.length > 0">
-        <mat-card *ngFor="let offering of offerings" class="content-card">
-            <mat-card-header>
-                <mat-card-title>{{ offering.title }}</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-                <p>{{ offering.description }}</p>
-                <h3 *ngIf="offering.amount">{{ 'OFFERINGS.REFERENCE_VALUE' | translate }}: {{ offering.amount | currency:'EUR' }}</h3>
-            </mat-card-content>
-            <mat-card-actions *ngIf="offering.attachment_url">
-                <a mat-button color="primary" [href]="offering.attachment_url" target="_blank">
-                    <mat-icon>attachment</mat-icon> {{ 'OFFERINGS.VIEW_ATTACHMENT' | translate }}
-                </a>
-            </mat-card-actions>
-        </mat-card>
-    </div>
 </div>
